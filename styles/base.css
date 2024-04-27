@@ -35,14 +35,16 @@ main {
     max-width: 100%;
     background-color: antiquewhite;
 }
-.cards {
+.card {
     display: grid;
-    height: 100vh;
-    grid-template: auto auto 1fr / 300px 1fr auto;
+    height: auto;
+    grid-template: none; 
 }
-main section{
+main ul{
     grid-column: 1 / 1;
+    list-style-type: none;
 }
+
 footer {
     text-align: center;
 }
