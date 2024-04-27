@@ -12,11 +12,16 @@ body {
    font-family: 'Oswald'; 
    font-weight: 400;
 }
-header h1{
+header {
     text-align: center;
+    background-color: rgba(118, 184, 193, 0.725);
 }
 header img {
-    align-items: center;
+    padding: 25px;
+}
+nav {
+    text-align: center;
+    background-color: rgb(170, 174, 176);
 }
 main {
     text-align: center;
@@ -30,4 +35,7 @@ main {
 }
 main section{
     grid-column: 1 / 1;
+}
+footer {
+    text-align: center;
 }
