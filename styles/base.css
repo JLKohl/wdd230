@@ -12,12 +12,22 @@ body {
    font-family: 'Oswald'; 
    font-weight: 400;
 }
+header h1{
+    text-align: center;
+}
+header img {
+    align-items: center;
+}
 main {
     text-align: center;
-    max-width: 75%;
+    max-width: 100%;
+    background-color: antiquewhite;
 }
 .cards {
     display: grid;
     height: 100vh;
     grid-template: auto auto 1fr / 300px 1fr auto;
+}
+main section{
+    grid-column: 1 / 1;
 }
