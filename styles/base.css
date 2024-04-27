@@ -24,11 +24,11 @@ header img {
 }
 nav {
     text-align: center;
-    background-color: rgb(170, 174, 176);
+    background-color: rgb(212, 215, 217);
 }
 nav a {
     text-decoration: none;
-    color: darkblue
+    color: rgb(36, 63, 63);
 }
 main {
     text-align: center;
