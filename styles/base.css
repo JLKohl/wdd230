@@ -20,6 +20,7 @@ header img {
     padding: 25px;
     height: 300px;
     width: auto;
+    height: auto;
 
 }
 nav {
@@ -35,15 +36,21 @@ main {
     max-width: 100%;
     background-color: antiquewhite;
     padding: 25px;
+
 }
 .card {
     display: grid;
     height: auto;
     grid-template: none; 
+
 }
 main ul{
     grid-column: 1 / 1;
     list-style-type: none;
+   
+}
+ main ul li a{
+    text-decoration: none;
 }
 
 footer {
