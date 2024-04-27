@@ -34,6 +34,7 @@ main {
     text-align: center;
     max-width: 100%;
     background-color: antiquewhite;
+    padding: 25px;
 }
 .card {
     display: grid;
@@ -47,4 +48,5 @@ main ul{
 
 footer {
     text-align: center;
+    background-color: rgb(212, 215, 217);
 }
