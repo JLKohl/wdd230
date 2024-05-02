@@ -5,27 +5,35 @@ header {
     max-width: 640px;
     margin: 1rem auto;
     border-style: solid;
-    border-color: rgb(130, 176, 221);
+    border-color: rgb(202, 214, 225);
     background-color: rgb(215, 230, 245);
     padding: 5px;
 
 }  
 main {
     max-width: 640px;
+    display: grid;
+    grid-template-columns: auto;
+    row-gap: 1rem;
     margin: 1rem auto;
     border-style: dashed;
     border-width: 2px;
     border-top: solid 5px;
     border-bottom: solid 5px;
-    border-color: rgb(120, 152, 184);
+    border-color: rgb(162, 186, 209);
     background-color: rgb(171, 199, 227);
     padding: 10px;
 }
-footer{
-    max-width: 640px;1
+main section{
+    background-color: white;
+    padding: 2%;
+}
+footer {
+    max-width: 640px;
     margin: 1rem auto;
     border-style: solid;
-    border-color: rgb(130, 176, 221);
+    border-color: rgb(202, 214, 225);
     background-color: rgb(215, 230, 245);
     padding: 5px;
 }
+
