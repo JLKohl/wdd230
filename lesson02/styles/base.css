@@ -36,7 +36,8 @@ main {
 .card h3{
     font-size: large;
     padding: 5px;
-    background-color: rgb(255, 236, 212);
+    background-color:rgb(28, 73, 99);
+    color: aliceblue;
 }
 .card h4 {
     font: 1em 'Oswald';
