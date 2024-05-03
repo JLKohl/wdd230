@@ -13,44 +13,66 @@ body {
 }
 header {
     text-align: center;
-    background-color: beige;
+    color: aliceblue;
+    background-color: black;
+    padding-bottom: 10px;
 }
 main {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    justify-content: center;
-    align-items: center;
-    column-gap: 30px;
-    padding: 20px;
+    column-gap: 40px;
+    row-gap: 10px;
+    padding: 10px;
+
 }
 .card {
     display: grid;
     grid-template-columns: auto;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 10px;
-    background-color: bisque;
+    grid-template-rows: min-content min-content min-content min-content min-content;
+    height: 100vh;  
+
+    background-color: rgb(232, 232, 232);
 }
 .card h3{
+    font-size: large;
     padding: 5px;
+    background-color: rgb(255, 236, 212);
 }
-.card h5 {
+.card h4 {
     font: 1em 'Oswald';
     padding: 5px;
 }
 .card img { 
-    max-width: 100%;
-    height: auto;
     display: block;
     margin-left: auto;
     margin-right: auto;
     padding: 10px;   
 }
 .card p {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: medium;
     max-width: 75%;
+    padding-top: 5px;
     height: auto;
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+footer {
+    color: azure;
+    background-color: black;
+    padding: 5px;
+}
+@media (max-width: 600px){
+    main{
+        grid-template-columns: 1fr;
+    }
+}
+@media (min-width: 600px) and (max-width: 992px){
+    main{
+        grid-template-columns: 1fr 1fr;
+    }
+    body > main > section:nth-child(3) {
+        column-span: all;
+    }
 }
