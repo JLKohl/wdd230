@@ -1,9 +1,13 @@
-@media (min-width: 640px){
-    nav ul {
+@media (min-width: 600px){
+    .navigation {
         display: flex;
        
     }
-    nav ul li {
+    .navigation a {
         flex: 1 1 100%;
+    }
+
+    #menu{
+        display: none;
     }
 }

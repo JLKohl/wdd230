@@ -13,7 +13,7 @@ body {
     grid-gap:10px;
     padding: 20px;
     max-width: 800px;
-    margin:auto;
+    margin: auto;
    font-family: 'Oswald'; 
    font-weight: 400;
 }
@@ -36,27 +36,23 @@ header img {
     height: 200px;
     padding:10px;
     width: auto;
-
 }
-nav {
+.navigation {
     text-align: center;
+    width: auto;
     background-color: rgb(212, 215, 217);
 }
-nav ul {
-    list-style-type: none;
-    padding: 5px;
+.navigation a {
+	padding: 1rem;
+	text-align: center;
+	text-decoration: none;
+	color: #000;
 }
-nav a {
-    text-decoration: none;
-    color: rgb(36, 63, 63);
-    padding: 5px;
-}
-nav a:hover {
+.navigation a:hover {
     background-color:rgb(198, 200, 201);
 }
 main {
     text-align: center;
-    max-width: 100%;
     background-color: antiquewhite;
     padding: 25px;
 
@@ -76,19 +72,10 @@ section{
 }
 main ul{
     grid-column: 1 / 1;
-    list-style-type: none;
-   
+    list-style-type: none;   
 }
- main ul li a{
-    text-decoration: none;
-}
-
 footer {
     text-align: center;
     padding: 10px;
     background-color: rgb(212, 215, 217);
 }
-@media (max-width: 600px){
-    nav {
-        display: flex;
-        flex-direction: column;
