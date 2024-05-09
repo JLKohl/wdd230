@@ -48,7 +48,11 @@ main {
     display: grid;
     height: auto;
     grid-template: none; 
+    grid-gap: 10px;
 
+}
+section{
+    padding: 10px;
 }
 main ul{
     grid-column: 1 / 1;
@@ -77,5 +81,7 @@ footer {
     nav {
         display: flex;
         flex-direction: column;
+
+
     }
 }
