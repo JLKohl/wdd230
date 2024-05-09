@@ -13,11 +13,11 @@
     .open a {
         display: block; 
      }
-    #menu{
+    /* #menu{
         font-size: 1.5rem;
         border: 0;
         background: none;
-        color: #000;
+        color: #000; */
     }
     #menu::before{
         content: "☰";
