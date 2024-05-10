@@ -49,3 +49,9 @@ section{
 section p {
     padding: 20px;
 }
+footer {
+    text-align: center;
+    padding: 10px;
+    color: var(--accent1);
+    background-color:var(--maincolor);
+}
