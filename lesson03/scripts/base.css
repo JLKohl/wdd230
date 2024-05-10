@@ -1,0 +1,51 @@
+:root {
+    --maincolor: #660000;
+    --secondary: #f9efdd;
+    --accent1: #ffffff;
+    --accent2: #000000;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: grid;
+    grid-gap: 15px;
+    max-width: 800px;
+    margin: auto;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+}
+body h1 {
+    font-family: 'Sedan SC';
+    font-size: 3rem;
+    color: var(--accent1);
+    background-color: var(--maincolor);
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 15px;   
+}
+body h2 {
+    font-family: 'Inconsolata';
+    text-decoration: underline;
+    font-size: 2rem;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+section {
+    text-align: center;
+}
+ul {
+    list-style-type: none;
+}
+section{
+    display: block;
+    padding: 10px;
+    background-color: rgb(249, 239, 221);
+
+}
+section p {
+    padding: 20px;
+}
