@@ -13,15 +13,10 @@
     .open a {
         display: block; 
      }
-    /* #menu{
-        font-size: 1.5rem;
-        border: 0;
-        background: none;
-        color: #000; */
-    }
     #menu::before{
         content: "☰";
     }
     #menu.open::before{
         content: "X";
     }
+}
