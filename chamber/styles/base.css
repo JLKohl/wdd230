@@ -41,6 +41,7 @@ body h1 {
     padding-top: 10px;
     padding-bottom: 15px;   
 }
+
 body h2 {
     font-family: 'Inconsolata';
     font-size: 1rem;
@@ -48,21 +49,29 @@ body h2 {
     padding-top: 15px;
     padding-bottom: 15px;
 }
+
+main {
+    display: grid;
+    grid-template-columns: repeat(3 1fr);
+    grid-template-rows: repeat(4 1fr);
+    grid-gap: 5px;
+}
+
 section {
     text-align: center;
 }
-ul {
-    list-style-type: none;
-}
+
 section{
     display: block;
     padding: 10px;
     background-color: rgb(249, 239, 221);
+}
 
+section .events{
+    grid-column: 1/2;
+    -ms-grid-row-span: 2;
 }
-section p {
-    padding: 20px;
-}
+
 footer {
     text-align: center;
     padding: 10px;
