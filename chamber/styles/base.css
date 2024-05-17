@@ -69,6 +69,11 @@ footer {
     color: var(--accent1);
     background-color:var(--maincolor);
 }
+
+.contact {
+    padding: 10px;
+}
+
 @media (max-width: 600px){
     body{    
         justify-content: center;
