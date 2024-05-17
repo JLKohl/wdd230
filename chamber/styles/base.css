@@ -57,17 +57,10 @@ main {
 
 section {
     text-align: center;
-}
-
-section{
     display: block;
     padding: 10px;
     background-color: rgb(249, 239, 221);
-}
 
-section .events{
-    grid-column: 1/2;
-    -ms-grid-row-span: 2;
 }
 
 footer {
