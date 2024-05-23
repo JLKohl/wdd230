@@ -4,24 +4,39 @@
     --accent1: #ffffff;
     --accent2: #000000;
 }
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 .navigation {
     text-align: center;
     width: auto;
     background-color: var(--accent1);
 }
+
 .navigation a {
 	padding: 1rem;
 	text-align: center;
 	text-decoration: none;
 	color: #000;
 }
+
 .navigation a:hover {
-    background-color:rgb(216, 216, 216);
+    background-color:#D8D8D8;
+}
+
+.action {
+    background-color: #D8D8D8;
+    color: #000;
+}
+#mode{
+    position: relative;
+    float: right;
+	font-size: 2rem;
+	cursor: pointer;
 }
 
 body{
