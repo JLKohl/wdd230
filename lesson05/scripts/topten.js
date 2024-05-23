@@ -22,6 +22,6 @@ button.addEventListener('click', function(){
         input.value = '';
 
     } else {
-        'please enter a book and a chapter'
+        alert('please enter a book and chapter');
     }
 });
