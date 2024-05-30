@@ -2,6 +2,7 @@
     body{    
         justify-content: center;
         grid-gap:0;
+        max-width: 400px;
     }
     .navigation {
         display: flex;
@@ -19,6 +20,7 @@
     #menu.open::before{
         content: "X";
     }
+
     .herolabel {
         position: absolute;
         float: right;
