@@ -1,4 +1,4 @@
-@media (max-width: 600px){
+@media (max-width: 400px){
     body{    
         justify-content: center;
         grid-gap:0;
@@ -19,5 +19,15 @@
     #menu.open::before{
         content: "X";
     }
+    .herolabel {
+        position: absolute;
+        float: right;
+        font-family: 'Oswald';
+        background: white;
+        padding: 1.5rem;
+        box-shadow: 0 0 1rem gray;
+        opacity: 0.75;
+    }
+
  
 }

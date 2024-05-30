@@ -10,6 +10,7 @@
 /* Oswald font*/
 body {
     display: grid;
+    flex-direction: column;
     grid-gap:10px;
     padding: 20px;
     max-width: 1280px;
@@ -20,22 +21,33 @@ body {
 header {
     display: grid;
     padding-top: 10px;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     background-color: rgba(118, 184, 193, 0.725);
 }
 header h1 {
-    grid-column: 3/4;
+    grid-column: 1/2;
     grid-row: 2/2;
     position: relative;
 
 }
+
+.herolabel {
+    position: absolute;
+    float: right;
+    margin-top: 50px;
+    margin-left: 75px;
+    font-family: 'Oswald';
+    background: white;
+    padding: 1.5rem;
+    box-shadow: 0 0 1rem gray;
+    opacity: 0.75;
+}
+
 header img {
-    grid-column: 2/4;
-    grid-row: 2/2;
     height: 200px;
-    padding:10px;
     width: auto;
 }
+
 .navigation {
     text-align: center;
     width: auto;
