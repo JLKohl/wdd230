@@ -3,6 +3,9 @@
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(4, 1fr);
     }
+    header{
+        max-width: fit-content;
+    }
     
     .events {
         grid-column-start: 1;
