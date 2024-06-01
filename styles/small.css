@@ -1,9 +1,12 @@
 @media (max-width: 400px){
     body{    
         justify-content: center;
+        max-width: 400px;
         grid-gap:10px;
-        margin: 0;
+        margin-right: auto;
+
     }
+
     .navigation {
         display: flex;
         flex-direction: column;

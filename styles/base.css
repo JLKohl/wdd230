@@ -11,7 +11,6 @@
 body {
     display: grid;
     grid-gap:10px;
-    max-width: 400px;
     margin: auto;
    font-family: 'Oswald'; 
    font-weight: 400;
