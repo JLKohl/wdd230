@@ -3,7 +3,6 @@
         justify-content: center;
         max-width: 400px;
         grid-gap:10px;
-        margin-right: auto;
 
     }
 
@@ -14,9 +13,11 @@
     .navigation a{
         display: none;
     }
+
     .open a {
         display: block; 
      }
+
     #menu::before{
         content: "☰";
     }
