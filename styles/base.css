@@ -45,15 +45,18 @@ header img {
     width: auto;
     background-color: rgb(212, 215, 217);
 }
+
 .navigation a {
 	padding: 1rem;
 	text-align: center;
 	text-decoration: none;
 	color: #000;
 }
+
 .navigation a:hover {
     background-color:rgb(198, 200, 201);
 }
+
 main {
     text-align: center;
     background-color: antiquewhite;

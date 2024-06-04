@@ -32,6 +32,7 @@
     background-color: #D8D8D8;
     color: #000;
 }
+
 #mode{
     position: relative;
     float: right;
@@ -39,6 +40,10 @@
 	cursor: pointer;
 }
 
+picture{
+    max-width: 100%;
+    max-height: auto;
+}
 body{
     display: grid;
     grid-gap: 15px;
