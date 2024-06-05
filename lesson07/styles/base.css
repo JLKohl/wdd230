@@ -1,0 +1,44 @@
+h1 {
+    text-align: center;
+    background-color: aliceblue;
+    height: 75px;
+}
+
+body {
+    position: absolute;
+    top: 20%;
+    left: 45%;
+    width: 400px;
+    height: 200px;
+    margin: -100px 0 0 -100px;
+  }
+
+footer {
+    text-align: center;
+}
+
+img {
+    width: 100%;
+    background: #000;
+    animation: fade 15s;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@media (max-width: 400px) {
+
+    body {
+        top: 0;
+        left: 0;
+        margin: auto;
+    }
+}
+    
