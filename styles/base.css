@@ -58,8 +58,9 @@ header img {
 }
 
 main {
+    display: grid;
+    grid-gap: 10px;
     text-align: center;
-    background-color: antiquewhite;
     padding: 25px;
 
 }
@@ -67,11 +68,13 @@ main {
     display: grid;
     height: auto;
     grid-template: none; 
-    grid-gap: 10px;
+    grid-gap: 25px;
+    background-color: antiquewhite;
 
 }
 .card-map{
     position:relative;
+    border: none;
 }
 section{
     padding: 10px;

@@ -36,8 +36,8 @@
     </nav>
     <button class="action">call to action</button>
     <picture>
-        <source media="(max-width: 400px)" srcset="images/hero-small.webp">
-        <source media="(max-width: 800px)" srcset="images/hero-medium.webp">
+        <source media="(min-width: 400px)" srcset="images/hero-small.webp">
+        <source media="(min-width: 401px)" srcset="images/hero-medium.webp">
         <img src="images/hero-large.webp" alt="Three people having a meeting" width="1500" height="750">
     </picture>
     <main>
@@ -55,6 +55,9 @@
         </section>
         <section class="weather">
             <h2>Weather Card</h2>
+            <p>Temperature: <span id="temperature"> 45</span></p>
+            <p>Windspeed: <span id="windspeed"> 15</span></p>
+            <p>WindChill: <span id="windchill">&nbsp;</span></p>
         </section>
     </main>
     <footer>
@@ -68,6 +71,7 @@
     </footer>
     <script src="scripts/getdates.js"></script>
     <script src="scripts/hammenu.js"></script>
-    <script src="scripts/darkmode.js"></script>
+    <script src="./scripts/darkmode.js"></script>
+    <script src="./scripts/windchill.js"></script>
 </body>
 </html>
