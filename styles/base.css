@@ -9,22 +9,28 @@
 
 /* Oswald font*/
 body {
-    display: grid;
-    grid-gap:10px;
-    margin: auto;
-   font-family: 'Oswald'; 
-   font-weight: 400;
-}
+     display: grid;
+     grid-gap:10px;
+    justify-items: center;
+     margin: auto;
+     font-family: 'Oswald';
+     font-weight: 400;
+ }
 
 header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding-top: 10px;
     background-color: rgba(118, 184, 193, 0.725);
+    width: 100%;
 }
 
-header h1 {
-    position: relative;
 
-} 
+header img {
+    height: 20px;
+    width: 20px;
+}
 
 .herolabel {
     position: absolute;
@@ -35,14 +41,14 @@ header h1 {
     opacity: 0.75;
 }
 
-header img {
-    height: 20px;
-    width: auto;
+.temple {
+    width: 100%;
+    height: 100%;
 }
 
 .navigation {
     text-align: center;
-    width: auto;
+    width: 100%;
     background-color: rgb(212, 215, 217);
 }
 

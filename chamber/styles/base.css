@@ -40,14 +40,14 @@
 	cursor: pointer;
 }
 
-picture{
-    max-width: 100%;
-    max-height: auto;
+img{
+    width: 100%;
+    height: auto;
 }
 body{
     display: grid;
     grid-gap: 15px;
-    max-width: 800px;
+    max-width: 1150px;
     margin: auto;
     font-family: 'Times New Roman', Times, serif;
     font-size: large;
@@ -73,6 +73,7 @@ body h2 {
 main {
     display: grid;
     grid-gap: 5px;
+    min-height: 100vh;
 }
 
 section {
@@ -80,7 +81,7 @@ section {
     display: block;
     padding: 10px;
     background-color: rgb(249, 239, 221);
-
+    height: auto;
 }
 
 footer {
@@ -90,6 +91,42 @@ footer {
     background-color:var(--maincolor);
 }
 
+.local-photos {
+    background-color: var(--accent1);
+}
+
+.hidden {
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    width: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+}
+.side-bar {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-gap: 10px;
+    background-color: var(--accent1);
+}
+
+.fiddlers img {
+    width: 80%;
+    height: auto;
+    padding: 10px;
+    position: relative;
+}
+
+.fiddlers section {
+    padding: 20px;
+}
+
+fiddlers p {
+    padding: 30px;
+}
 .contact {
     padding: 10px;
 }

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Jennifer Kohl">
+    <meta name="description" content="course assignment Galax City Chamber of Commerce for WDD 230 - Web Frontend Development, BYU Idaho.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sedan+SC&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Sedan+SC&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="icon" href="favicon.ico">
+    <meta property="og:title" content="Galax City Chamber of Commerce - Kohl - WDD 230">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://www.romanticasheville.com/sites/default/files/images/basic_page/blue_ridge_mountains_NC.jpg">
+    <meta property="og:url" content="https://jlkohl.github.io/wdd230/chamber/index.html">
+    <title>Galax City Chamber of Commerce</title>
+</head>
+<body>
+    <header>
+        <div id="mode"> ☽ </div>
+        <h1>Galax City Chamber of Commerce</h1>
+    </header>
+    <button id="menu" title="menu"></button>
+    <nav class="navigation">
+        <a>Home</a>
+        <a>Discovery</a>
+        <a>Directory</a>
+        <a>Join</a>
+    </nav>
+    <main>
+        <section class="side-bar">
+            <h2 class="hidden">Information about the City of Galax</h2>
+                <section class="fiddlers">
+                    <img src="images/fiddlers.webp" loading="lazy" alt="Galax Va Fiddlers" width="300" height=200>
+                    <h3>Don't Miss Out</h3>
+                    <h4>The annual Fiddlers Convention is coming soon!</h4>
+                    <p> The first full week of August hold the 88th old fiddlers convention
+                    come join the fun! Sign up for booths to let people know what you are 
+                    selling! For more information on the convention click <a href="https://www.oldfiddlersconvention.com/" target="_blank"> HERE</a></p>
+                </section>
+                <section>
+                    <h3>Interested in other events?</h3>
+                    <p> Check out other events coming soon to Galax!</p>
+                    <a href="https://visitgalax.com/calendar/" target="_blank">Click here</a>
+                </section>
+                <section>
+                    <h3>Visits</h3>
+                    <p><span class="label">Number of Visits: </span><span class="visits"></span></p>
+                </section>
+        </section>    
+        <section class="local-photos">
+            <h2 class="hidden">local photos</h2>
+            <img src="images/image-one.webp" loading="lazy" alt="Galax Va Fiddlers" width="300" height=200>
+            <img src="images/image-two.webp" loading="lazy" alt="Blue Ridge parkway" width="300" height=200>
+            <img src="images/image-three.webp" loading="lazy" alt="Love sign love is spelled out with fiddles" width="300" height=200>
+            <img src="images/image-four.webp" loading="lazy" alt="Down town Galax Va in the Fall" width="300" height=200>
+            <img src="images/image-five.webp" loading="lazy" alt="photo of the new river" width="300" height=200>
+            <img src="images/image-six.webp" loading="lazy" alt="a second photo of the new river" width="300" height=200>
+        </section>
+    </main>
+    <footer>
+        <div class="contact">
+            <p>Address: 1234 W Galax Dr</p>
+            <p>Phone: (276)237-1234</p>
+            <p>E-mail: galaxcitycommerce@galax.com</p>
+        </div>
+        <p>Jennifer Kohl | Project for WDD 230 - BYUi | &copy; <span id="year"></span></p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/getdates.js"></script>
+    <script src="scripts/hammenu.js"></script>
+    <script src="./scripts/darkmode.js"></script>
+    <script src="./scripts/windchill.js"></script>
+    <script src="scripts/pagecounter.js"></script>
+</body>
+</html>

@@ -34,4 +34,19 @@
         grid-row-end: span 2;
     }
     
+    .local-photos {
+        grid-column-start: 2;
+        grid-column-end: span 2;
+        grid-row-end: span 4;
+        
+    }
+    
+    .local-photos:hover {
+        filter: contrast(50%);
+    }
+
+    .side-bar {
+        grid-row-end: span 4;
+    }
+    
 }
