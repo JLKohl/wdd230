@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jennifer Kohl - WDD 230 - Web Frontend Development - Form</title>
+    <meta name="author" content="Jennifer Kohl">
+    <meta name="description" content="course assignment Portal for WDD 230 - Web Frontend Development, BYU Idaho.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="icon" href="favicon.ico">
+    <meta property="og:title" content="Jennifer Kohl - WDD 230 - Web Frontend Development">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://www.romanticasheville.com/sites/default/files/images/basic_page/blue_ridge_mountains_NC.jpg">
+    <meta property="og:url" content="https://jlkohl.github.io/wdd230/">
+</head>
+<body>
+<header>
+    <h1>Jennifer Kohl</h1>
+    <img src="images/profile.webp" alt="Jennifer Kohl photo">
+</header>
+<button id="menu" title="menu"></button>
+<nav class="navigation">
+    <a href="#">Home</a>
+    <a href="https://jlkohl.github.io/wdd230/lesson03/chamber-site-plan.html">Site Plan</a>
+    <a href="https://jlkohl.github.io/wdd230/chamber/index.html">Chamber</a>
+    <a href="https://www.byui.edu/" target="_blank">BYU-Idaho</a>
+    <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/3-ne/13?lang=eng&id=p34#p34" target="_blank">Scripture</a>
+</nav>
+<main>
+    <h1>Account Sign-Up</h1>
+    <form method="get" action="thanks.html" class="wf1">
+        <fieldset>
+            <legend>Account Information</legend>
+            <div id="alert"></div>
+            <label>UserName*<input type="text" id="username" name="fname" required></label>
+            <label>Password*<input type="password"  id="password"  name="password" pattern="[A-Za-z0-9]{8,}" placeholder=" at least 8 letters or numbers" required></label>
+            <label>Password*<input type="password"  id="password2"  name="password2" pattern="[A-Za-z0-9]{8,}" placeholder=" at least 8 letters or numbers" required></label>
+            <label>E-mail*<input type="email" id="email" name="email" placeholder="Your byui email address" title="A valid byui.edu email address." pattern="[a-zA-Z0-9_.\-]+@byui.edu" required></label>
+            <label>Page Rating</label>
+            <div id="rangevalue">0</div>
+            <input type="range" id="r" name="r" min="0" max="10" value="0" step="1" list="rangevalues">
+                <datalist id="rangevalues">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </datalist>
+        </fieldset>
+        <input type="submit" value="Create My Account">
+    </form>
+
+</main>
+<footer>
+    <p>&copy; <span id="year"></span> | Jennifer Kohl | United States </p>
+    <p id="lastModified"></p>
+</footer>
+<script src="scripts/getdates.js"></script>
+<script src="scripts/hammenu.js"></script>
+<script src="scripts/pagecounter.js"></script>
+<script src="scripts/checkpass.js"></script>
+<script src="scripts/rangedisplay.js"></script>
+</body>
+</html>
+            
