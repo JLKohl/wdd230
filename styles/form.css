@@ -1,51 +1,52 @@
 /*----------- FORM STYLING --------------*/
+:root {
+    --color1: rgba(242, 249, 253, 0.72);
+    --color2: rgba(118, 184, 193, 0.725);
+    --color3: rgba(28, 44, 58, 0.72);
+}
 
 .wf1 fieldset {
     margin: 2rem 0;
     border: 1px solid #ddd;
     border-radius: 5px;
     padding: .5rem 2%;
+    background: var(--color2);
 }
 
 .wf1 legend{
-    color: #445ba9;
     padding: 10px 1rem;
 }
 
 .wf1 label {
     display: block;
     padding-top: 1rem;
-    color: black;
-    font-size: .9rem;
+    font-size: 1rem;
     text-align: left;
 }
 
 .wf1 div {
     padding-top: 1rem;
-    color: #445ba9;
     font-size: .9rem;
 }
 
 .wf1 input[type="text"],
 .wf1 input[type="email"],
 .wf1 input[type="password"],
-.wf1 input[type="password2"],
-.wf1 select
+.wf1 input[type="password2"]
 {
-    background-color: #eee;
+    background-color: var(--color1);
     display: block;
     border: solid 1px #ddd;
     border-radius: 6px;
     padding: .75rem;
-    color: grey;
     width: 100%;
-    max-width: 400px;
+    max-width: 500px;
     appearance: none;
 }
 
 .wf1 input[type="submit"]{
     border: solid 1px #e5e5e5;
-    background-color: #474f6b;
+    background-color: var(--color3);
     color: white;
     border-radius: 5px;
     padding: .9rem;
@@ -60,5 +61,5 @@
 }
 
 .wf1 input:required:valid{
-    border-right: solid 4px green;
+    border-left: none;
 }
