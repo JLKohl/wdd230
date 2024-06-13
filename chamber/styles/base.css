@@ -1,7 +1,7 @@
 :root {
     --maincolor: #660000;
     --secondary: #f9efdd;
-    --accent1: #ffffff;
+    --accent1: #f5f5f5;
     --accent2: #000000;
 }
 
@@ -64,7 +64,7 @@ body h1 {
 
 body h2 {
     font-family: 'Inconsolata';
-    font-size: 1rem;
+    font-size: 1.5rem;
     text-align: center;
     padding-top: 15px;
     padding-bottom: 15px;
@@ -73,7 +73,7 @@ body h2 {
 main {
     display: grid;
     grid-gap: 5px;
-    min-height: 100vh;
+    /*min-height: 100vh;*/
 }
 
 section {
@@ -90,6 +90,11 @@ footer {
     color: var(--accent1);
     background-color:var(--maincolor);
 }
+
+.contact {
+    padding: 10px;
+}
+/*--------discovery page------------*/
 
 .local-photos {
     background-color: var(--accent1);
@@ -124,12 +129,174 @@ footer {
     padding: 20px;
 }
 
-fiddlers p {
+.fiddlers p {
     padding: 30px;
 }
-.contact {
-    padding: 10px;
+
+/*------------join page-------------*/
+
+.membership h1 {
+    height: 5%;
+    font-size: 2rem;
+    vertical-align: middle;
 }
+
+.signup {
+    background-color: white;
+}
+
+.membership {
+    display: flex;
+    flex-direction: column;
+    gap: 75px;
+}
+
+.membership h2{
+    border: solid 2px var(--accent2);
+    background-color: var(--accent1);
+}
+
+.gold  h2 {
+    background-color: darkgoldenrod;
+}
+
+.silver h2 {
+    background-color: silver;
+}
+
+.bronze h2 {
+    background-color: saddlebrown;
+}
+
+.membership p{
+    padding: 30px;
+    border: solid 1px var(--accent2);
+    background-color: var(--accent1);
+}
+
+table {
+    margin: 10% auto 10px;
+    border: thin solid gray;
+    box-shadow: 0 0 5px grey;
+    border-collapse: collapse;
+    background-color: var(--accent1);
+}
+
+thead tr:nth-child(1) {
+    font-size: larger;
+    height: 50px;
+    width: auto;
+    background-color: var(--maincolor);
+    color: var(--accent1);
+}
+
+thead tr:nth-child(2) {
+    border-collapse: collapse;
+    background-color: var(--maincolor);
+    color: var(--accent1);
+}
+
+
+tbody tr td:first-child {
+    background-color: #707070;
+    color: var(--accent1);
+}
+
+td {
+    padding: 5px;
+    border: thin solid darkgray;
+}
+
+caption {
+    caption-side: bottom;
+    padding: 2px;
+}
+
+.caption2 {
+    font-size: smaller;
+}
+
+tbody tr:nth-child(odd) td:nth-child(n+2){
+    background-color: #e5e5e5;
+}
+
+/*-------------form--------------*/
+
+.wf1 fieldset {
+    margin: 2rem 0;
+    border: 3px solid var(--maincolor);
+    border-radius: 2px;
+    padding: .5rem 2%;
+}
+
+.wf1 legend{
+    color: var(--accent2);
+    font-size: larger;
+    padding: 0 .5rem;
+}
+
+.wf1 label {
+    display: block;
+    padding-top: 1rem;
+    color: var(--accent2);
+    font-size: 1.2rem;
+    text-align: left;
+}
+
+.wf1 div {
+    padding-top: 1rem;
+    color: var(--accent2);
+    font-size: 1.2rem;
+    text-align: left;
+    text-decoration: underline;
+}
+
+.wf1 input[type="text"],
+.wf1 input[type="tel"],
+.wf1 input[type="email"],
+.wf1 select,
+.wf1 textarea
+{
+    background-color: var(--accent1);
+    display: block;
+    border: solid 1px #ddd;
+    border-radius: 6px;
+    padding: .75rem;
+    color: var(--accent1);
+    width: 100%;
+    max-width: 400px;
+    appearance: none;
+}
+
+.wf1 input[type="radio"]{
+    margin-right: 6px;
+}
+
+.wf1 input[type="submit"]{
+    background-color: var(--maincolor);
+    color: var(--accent1);
+    border-radius: 5px;
+    padding: .9rem;
+    width: 96%;
+    max-width: 400px;
+    margin: -1rem 2% 2rem 2%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.wf1 input:required{
+    border-left: solid 8px var(--maincolor);
+}
+
+.wf1 input:required:valid{
+    border-right: none;
+}
+
+/*--------------thankyou-----------*/
+
+.thankyou h2 {
+    padding: 100px;
+}
+/*-------------media------------*/
 
 @media (max-width: 600px){
     body{    

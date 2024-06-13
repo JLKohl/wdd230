@@ -1,6 +1,6 @@
 @media (min-width: 600px){
     main {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(4, 1fr);
     }
 
@@ -34,9 +34,11 @@
         grid-row-end: span 2;
     }
     
-    .local-photos {
+    /*---------discover page--------*/
+    
+    .local-photos{
         grid-column-start: 2;
-        grid-column-end: span 2;
+        grid-column-end: span 3;
         grid-row-end: span 4;
         
     }
@@ -45,8 +47,31 @@
         filter: contrast(50%);
     }
 
-    .side-bar {
+    .side-bar{
+        grid-column-start: 1;
         grid-row-end: span 4;
     }
+    
+    /*-----------join page-------------*/
+    
+    .membership{
+        grid-column-start: 1;
+        grid-column-end: span 2;
+        grid-row-end: span 4;
+    }
+
+    .signup{
+        grid-column-start: 3;
+        grid-column-end: span 2;
+        grid-row-end: span 4;
+    }
+
+    /*--------------thankyou-----------*/
+
+    .thankyou h2 {
+        grid-column-start: 2;
+        grid-column-end: span 2;
+        grid-row-start: 1;
+        grid-row-end: span 4;
     
 }

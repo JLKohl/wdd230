@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Jennifer Kohl">
+    <meta name="description" content="course assignment Galax City Chamber of Commerce for WDD 230 - Web Frontend Development, BYU Idaho.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sedan+SC&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Sedan+SC&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="icon" href="favicon.ico">
+    <meta property="og:title" content="Galax City Chamber of Commerce - Kohl - WDD 230">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://www.romanticasheville.com/sites/default/files/images/basic_page/blue_ridge_mountains_NC.jpg">
+    <meta property="og:url" content="https://jlkohl.github.io/wdd230/chamber/index.html">
+    <title>Galax City Chamber of Commerce</title>
+</head>
+<body>
+    <header>
+        <div id="mode"> ☽ </div>
+        <h1>Galax City Chamber of Commerce</h1>
+    </header>
+    <button id="menu" title="menu"></button>
+    <nav class="navigation">
+        <a href="index.html">Home</a>
+        <a href="discover.html">Discovery</a>
+        <a>Directory</a>
+        <a>Join</a>
+    </nav>
+    <main>
+        <section class="membership">
+            <h1 class="membership">Chamber of Commerce Memberships</h1>
+            <div class="gold">
+                <h2>Gold MemberShip $500/year</h2>
+                <p>Gold members enjoy the highest level of access and benefits. They have exclusive entry to all networking events,
+                    featured listings in our directories, and premium advertising opportunities. Additionally, Gold members receive
+                    comprehensive business support, including free workshops, personalized consulting, and complimentary use of chamber
+                    facilities. They are also strongly represented in advocacy efforts and receive special recognition and VIP treatment
+                    at chamber events.</p>                
+            </div>
+            <div class="silver">
+                <h2>Silver Membership $300/year</h2>
+                <p>Silver members benefit from selected access to networking events and a standard presence in our business directory
+                    and newsletters. They enjoy discounted advertising options and access to business support services at reduced rates.
+                    This includes discounted workshops, group consulting sessions, and affordable use of chamber meeting rooms.
+                    Silver members are well-represented in advocacy initiatives and participate in policy discussions.</p>   
+            </div>
+            <div class="bronze">
+                <h2>Bronze Membership $150/year</h2>
+                <p>Bronze members have limited access to networking events and a basic listing in the business directory.
+                    They receive occasional mentions in newsletters and can attend selected workshops and consulting sessions
+                    at discounted rates. Bronze members are included in basic advocacy efforts and receive discounts on chamber
+                    events and services.</p>
+            </div>
+            <div class="np">
+                <h2>Non Profit Membership (NP) Free</h2>
+                <p>Non-Profit members receive benefits designed to support their unique needs. They have access to networking
+                    events to connect with local businesses and community leaders. Their organizations are listed in the business
+                    directory, and they receive mentions in newsletters. Non-Profits benefit from discounted advertising rates and access
+                    to business support services, including free workshops and group consulting. They are also supported in advocacy efforts
+                    and receive special recognition in the community.</p> 
+            </div>
+                <div>**levels generated with the help of ChatGPT</div>
+        </section>
+        <section class="signup">
+            <h2>Membership Table</h2>
+            <table>
+                <caption>Table 1: Membership Feature Comparison</caption>
+                <thead>
+                <tr>
+                    <th colspan="5" scope="colgroup">Chamber Membership Levels</th>
+                </tr>
+                <tr>
+                    <th>Benefits</th>
+                    <th>Gold ($500/year)</th>
+                    <th>Silver ($300/year)</th>
+                    <th>Bronze ($150/year)</th>
+                    <th>Non-Profit (Free)</th>
+
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>Networking Events</td>
+                    <td>Exclusive Access</td>
+                    <td>Selected Access</td>
+                    <td>Limited Access</td>
+                    <td>Access to Networking Events</td>
+                </tr>
+                <tr>
+                    <td>Business Directory</td>
+                    <td>Featured Listing</td>
+                    <td>Standard Listing</td>
+                    <td>Basic Listing</td>
+                    <td>Listed in Directory</td>
+                </tr>
+                <tr>
+                    <td>Newsletter Article</td>
+                    <td>Spotlight Article</td>
+                    <td>Regular Mentions</td>
+                    <td>Occasional Mentions</td>
+                    <td>Regular Mentions</td>
+                </tr>
+                <tr>
+                    <td>Website and Social Media</td>
+                    <td>Premium Advertising</td>
+                    <td>Discounted Rates</td>
+                    <td>Not Included</td>
+                    <td>Discounted Rates</td>
+                </tr>
+                <tr>
+                    <td>Business Workshops & Seminars</td>
+                    <td>Free Access</td>
+                    <td>Discounted Access</td>
+                    <td>Selected Discounts</td>
+                    <td>Free Access</td>
+                </tr>
+                <tr>
+                    <td>Advocacy</td>
+                    <td>Strong Representation</td>
+                    <td>Standard Representation</td>
+                    <td>Basic Representation</td>
+                    <td>Support Advocacy</td>
+                </tr>
+                </tbody>
+            </table>
+        
+        <form method="get" action="thanks.html" class="wf1">
+            <fieldset>
+                <legend>Join The Galax City Chamber of Commerce</legend>
+                <p>* indicates required field</p>
+                <label>*First Name<input type="text" id="fname" name="fname" required></label>
+                <label>*Last Name<input type="text" id="lname" name="lname" required></label>
+                <label>*Title or Position<input  type="text" id="title" name="title"  pattern="[A-Za-z-\s]{7,}" title="Please enter minimum seven characters using only letters, spaces and hyphens." required></label>
+                <label>*E-mail<input type="email" id="email" name="email" title="myemail@gmail.com" required></label>
+                <label>*Phone<input type="tel" id="phone" name="phone" required></label>
+                <label>*Business/Organization Name<input type="text" id="org" name="org" required></label>
+                <label>Description of Business/Organization<textarea id="description" name="description"></textarea></label>
+                <div>Select Membership Level</div>
+                <label><input type="radio" name="membership" value="gold"> Gold</label>
+                <label><input type="radio" name="membership" value="silver"> Silver</label>
+                <label><input type="radio" name="membership" value="bronze"> Bronze</label>
+                <label><input type="radio" name="membership" value="NP">NP</label>
+                
+            </fieldset>
+            <input type="hidden" id="timestamp" name="timestamp">
+            <input type="submit" value="Join the Commerce">
+        </form>
+        </section>
+    </main>
+<!--   this needs to go on thank you page <button onclick="location.href='https://jlkohl.github.io/wdd230/chamber/index.html'" class="button-link">return home</button>-->
+    <footer>
+        <div class="contact">
+            <p>Address: 1234 W Galax Dr</p>
+            <p>Phone: (276)237-1234</p>
+            <p>E-mail: galaxcitycommerce@galax.com</p>
+        </div>
+        <p>Jennifer Kohl | Project for WDD 230 - BYUi | &copy; <span id="year"></span></p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/getdates.js"></script>
+    <script src="scripts/hammenu.js"></script>
+    <script src="./scripts/darkmode.js"></script>
+    <script src="./scripts/recorddate.js.js"></script>
+</body>
+</html>
