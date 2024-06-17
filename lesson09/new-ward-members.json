@@ -1,0 +1,38 @@
+{
+  "familyName" : "Coleman",
+  "movedInDate"  : "2000-01-30",
+  "numberOfRecords" : 6,
+  "visitedByBishopric" : true,
+  "familyMembers" : [
+    {
+      "name" : "Jason Coleman",
+      "gender" : "male",
+      "birthday": "01/28/1989"
+    },
+    {
+      "name" : "Jennifer Coleman",
+      "gender" : "female",
+      "birthday": "10/18/1986"
+    },
+    {
+      "name" : "Joseph Coleman",
+      "gender" : "male",
+      "birthday": "11/16/2000"
+    },
+    {
+      "name" : "Eleanor Coleman",
+      "gender" : "female",
+      "birthday": "04/13/2011"
+    },
+    {
+      "name" : "Gabriel",
+      "gender" : "male",
+      "birthday": "11/15/2024"
+    },
+    {
+      "name" : "Samuel",
+      "gender" : "male",
+      "birthday": "06/21/2012"
+    }
+  ]
+}
