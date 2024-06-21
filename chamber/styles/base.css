@@ -300,15 +300,55 @@ tbody tr:nth-child(odd) td:nth-child(n+2){
 
 /*------------directory-----------*/
 
+.directory {
+    display: block;
+}
+
 .card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     background-color: white;
+    box-shadow: 0px 3px 10px rgba(0,0,0,0.16);
+    padding: 1.5rem;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 10px;
+    align-items: center;
 }
 
 .card h1 {
     color: var(--accent2);
-    background-color: var(--accent1);
+    background-color: white;
     font-family: "Times New Roman";
     font-size: smaller;
+}
+
+.card p {
+    text-align: center;
+}
+
+.card img {
+    max-width: 75%;
+    text-align: center;
+}
+
+.menu {
+    margin: 1rem auto;
+    border: 1px solid var(--maincolor);
+    padding: 0.5rem;
+    background-color: var(--maincolor);
+    
+    text-align: center;
+}
+
+.menu button {
+    padding: 1rem;
+    font-weight: 700;
 }
 /*-------------media------------*/
 

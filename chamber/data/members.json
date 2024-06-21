@@ -7,7 +7,7 @@
       "website" : " www.blueridgetech.com",
       "icon" : "images/tech-solutions.png",
       "membershipLevel" : "Gold",
-      "summary": "Provides cutting-edge software and IT solutions for local businesses."
+      "description": "Provides cutting-edge software and IT solutions for local businesses."
     },
     {
       "companyName": "Mountain View Landscaping",
@@ -16,7 +16,7 @@
       "website" : "www.mountainviewlandscaping.com",
       "icon" : "images/mountain-view-landscape.png",
       "membershipLevel" : "Silver",
-      "summary": "Specializes in sustainable landscaping and garden design services."
+      "description": "Specializes in sustainable landscaping and garden design services."
     },
     {
       "companyName": "Sunrise Bakery",
@@ -25,7 +25,7 @@
       "website" : "www.sunrisebakery.com",
       "icon" : "images/sunsine-bakery.png",
       "membershipLevel" : "Bronze",
-      "summary": "Offers freshly baked goods made from organic and locally sourced ingredients."
+      "description": "Offers freshly baked goods made from organic and locally sourced ingredients."
     },
     {
       "companyName": "Pure Waters Solution",
@@ -34,7 +34,7 @@
       "website" : "www.purewatersolutions.com",
       "icon" : "images/pure-water-solutions.png",
       "membershipLevel" : "Gold",
-      "summary": " Delivers high-quality water filtration and purification systems."
+      "description": " Delivers high-quality water filtration and purification systems."
     },
     {
       "companyName": "FitLife Gym",
@@ -43,7 +43,7 @@
       "website" : "www.fitlifegym.com",
       "icon" : "images/fit-lift-gym.png",
       "membershipLevel" : "Silver",
-      "summary": "Provides comprehensive fitness programs and personalized training."
+      "description": "Provides comprehensive fitness programs and personalized training."
     },
     {
       "companyName": "Artisan Crafts Studio",
@@ -52,7 +52,7 @@
       "website" : "www.artisancraftsstudio.com",
       "icon" : "images/crafts-studio.png",
       "membershipLevel" : "Bronze",
-      "summary": " Offers art and craft workshops for all ages, focusing on traditional and modern techniques."
+      "description": " Offers art and craft workshops for all ages, focusing on traditional and modern techniques."
     },
     {
       "companyName": "Helping Hearts Non-Profit",
@@ -61,7 +61,16 @@
       "website" : "www.helpinghearts.org",
       "icon" : "images/helping-hands.png",
       "membershipLevel" : "Non-Profit",
-      "summary": " Dedicated to providing essential resources and support to families in need within the community."
+      "description": " Dedicated to providing essential resources and support to families in need within the community."
+    },
+    {
+      "companyName": "Galax Bookstore",
+      "address" : "123 Reading Lane, Galax, VA 24333",
+      "phoneNumber" : "(276) 555-1234",
+      "website" : "www.galaxbookstore.com",
+      "icon" : "images/helping-hands.png",
+      "membershipLevel" : "Silver",
+      "description": "The Galax Bookstore offers a wide selection of books, including bestsellers, local authors, and rare finds. They host regular reading events and book signings."
     }
   ]
 }
