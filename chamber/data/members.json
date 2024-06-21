@@ -5,7 +5,7 @@
       "address" : "101 Tech Avenue, Galax, VA 24333",
       "phoneNumber" : "(555) 123-4567",
       "website" : " www.blueridgetech.com",
-      "icon" : "",
+      "icon" : "images/tech-solutions.png",
       "membershipLevel" : "Gold",
       "summary": "Provides cutting-edge software and IT solutions for local businesses."
     },
@@ -14,7 +14,7 @@
       "address" : " 202 Greenway Road, Galax, VA 24333",
       "phoneNumber" : "(555) 234-5678",
       "website" : "www.mountainviewlandscaping.com",
-      "icon" : "",
+      "icon" : "images/mountain-view-landscape.png",
       "membershipLevel" : "Silver",
       "summary": "Specializes in sustainable landscaping and garden design services."
     },
@@ -23,7 +23,7 @@
       "address" : "303 Sunrise Street, Galax, VA 24333",
       "phoneNumber" : "(555) 345-6789",
       "website" : "www.sunrisebakery.com",
-      "icon" : "",
+      "icon" : "images/sunsine-bakery.png",
       "membershipLevel" : "Bronze",
       "summary": "Offers freshly baked goods made from organic and locally sourced ingredients."
     },
@@ -32,7 +32,7 @@
       "address" : "404 Water Street, Galax, VA 24333",
       "phoneNumber" : "(555) 456-7890",
       "website" : "www.purewatersolutions.com",
-      "icon" : "",
+      "icon" : "images/pure-water-solutions.png",
       "membershipLevel" : "Gold",
       "summary": " Delivers high-quality water filtration and purification systems."
     },
@@ -41,7 +41,7 @@
       "address" : "505 Fitness Lane, Galax, VA 24333",
       "phoneNumber" : "(555) 567-8901",
       "website" : "www.fitlifegym.com",
-      "icon" : "",
+      "icon" : "images/fit-lift-gym.png",
       "membershipLevel" : "Silver",
       "summary": "Provides comprehensive fitness programs and personalized training."
     },
@@ -50,7 +50,7 @@
       "address" : "606 Artisans Alley, Galax, VA 24333",
       "phoneNumber" : "(555) 678-9012",
       "website" : "www.artisancraftsstudio.com",
-      "icon" : "",
+      "icon" : "images/crafts-studio.png",
       "membershipLevel" : "Bronze",
       "summary": " Offers art and craft workshops for all ages, focusing on traditional and modern techniques."
     },
@@ -59,7 +59,7 @@
       "address" : "707 Community Drive, Galax, VA 24333",
       "phoneNumber" : "(555) 789-0123",
       "website" : "www.helpinghearts.org",
-      "icon" : "",
+      "icon" : "images/helping-hands.png",
       "membershipLevel" : "Non-Profit",
       "summary": " Dedicated to providing essential resources and support to families in need within the community."
     }

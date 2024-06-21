@@ -296,6 +296,20 @@ tbody tr:nth-child(odd) td:nth-child(n+2){
 .thankyou h2 {
     padding: 100px;
 }
+
+
+/*------------directory-----------*/
+
+.card {
+    background-color: white;
+}
+
+.card h1 {
+    color: var(--accent2);
+    background-color: var(--accent1);
+    font-family: "Times New Roman";
+    font-size: smaller;
+}
 /*-------------media------------*/
 
 @media (max-width: 600px){
