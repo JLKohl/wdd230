@@ -13,7 +13,7 @@
       "companyName": "Mountain View Landscaping",
       "address" : " 202 Greenway Road, Galax, VA 24333",
       "phoneNumber" : "(555) 234-5678",
-      "website" : "www.mountainviewlandscaping.com",
+      "website" : "www.mountainviewland.com",
       "icon" : "images/mountain-view-landscape.png",
       "membershipLevel" : "Silver",
       "description": "Specializes in sustainable landscaping and garden design services."
@@ -62,15 +62,6 @@
       "icon" : "images/helping-hands.png",
       "membershipLevel" : "Non-Profit",
       "description": " Dedicated to providing essential resources and support to families in need within the community."
-    },
-    {
-      "companyName": "Galax Bookstore",
-      "address" : "123 Reading Lane, Galax, VA 24333",
-      "phoneNumber" : "(276) 555-1234",
-      "website" : "www.galaxbookstore.com",
-      "icon" : "images/helping-hands.png",
-      "membershipLevel" : "Silver",
-      "description": "The Galax Bookstore offers a wide selection of books, including bestsellers, local authors, and rare finds. They host regular reading events and book signings."
     }
   ]
 }
