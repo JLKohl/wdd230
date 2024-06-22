@@ -17,10 +17,12 @@ const displayMembers = (members) => {
         const img = document.createElement("img");
         console.log("Image source: " + member.icon);
         img.src = member.icon;
+        img.alt = member.displayName;
         card.appendChild(img);
         
         const h1 = document.createElement("h1");
         h1.textContent = member.companyName;
+        h1.className = "card-title";
         card.appendChild(h1);
         
         const address = document.createElement("p");

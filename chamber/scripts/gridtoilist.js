@@ -1,12 +1,13 @@
+const gridElement = document.querySelector(".grid");
 const listButton = document.getElementById("list");
 const gridButton = document.getElementById("grid");
 
 listButton.addEventListener("click", function() {
-    gridElement.classList.remove("grid-view");
-    gridElement.classList.add("list-view");
+    gridElement.classList.remove("grid");
+    gridElement.classList.add("list");
 });
 
 gridButton.addEventListener("click", function() {
-    gridElement.classList.remove("list-view");
-    gridElement.classList.add("grid-view");
+    gridElement.classList.remove("list");
+    gridElement.classList.add("grid");
 });

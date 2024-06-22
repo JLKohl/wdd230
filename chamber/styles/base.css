@@ -349,57 +349,35 @@ tbody tr:nth-child(odd) td:nth-child(n+2){
     font-weight: 700;
     width: 5rem;
 }
-.grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    grid-gap: 5px;
-    align-items: center;
-}
 
-.grid section {
-    text-align: center;
-}
-
-.grid img {
-    border: 1px solid #fff;
-    box-shadow: 0 0 10px #333;
-}
-
-.grid section > * {
-    margin: 0.1rem;
-}
-
-.grid h3 {
-    font-family: "Caveat", cursive;
-}
-
-.list {
+.list{
     display: flex;
     flex-direction: column;
 }
 
-.list section {
-    display: grid;
-    grid-template-columns: 2fr 1fr 1fr;
-    margin: 0;
-    padding: 0.25rem;
+.list .card {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 10px; 
 }
 
-.list section > * {
-    margin: 0 1rem;
+
+.list img {
+    display: none;
 }
 
-.list section img {
-    display: none; /* smaller viewports only */
+.list .card:nth-child(even) {
+    background-color: var(--accent1);
 }
 
-.list section h3 {
-    font-size: 1rem;
-    font-family: Roboto, Helvetica, sans-serif;
+.grid .card .card-title {
+    display: none;
 }
 
-.list section:nth-child(even) {
-    background-color: #bed;
+.list .card .card-title {
+    display: block;
 }
 /*-------------media------------*/
 
@@ -427,6 +405,23 @@ tbody tr:nth-child(odd) td:nth-child(n+2){
     }
     #menu.open::before{
         content: "X";
+    }
+    .list {
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        width: 100%; /* Limit width */
+        overflow-x: auto; /* Add a scrollbar if the contents are too wide */
+    }
+
+    .list .card {
+        box-sizing: border-box;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        flex-wrap: wrap; /* Wrap items onto the next line if they do not fit */
+        margin-bottom: 10px;
     }
  
 }
