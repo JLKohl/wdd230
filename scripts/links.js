@@ -29,6 +29,6 @@ const displayLinks = (weeks) => {
         cardElement.appendChild(card)
     });
 
-}
+}   
 
 getLinks();
