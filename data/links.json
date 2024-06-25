@@ -113,12 +113,8 @@
       "lesson": "10",
       "links": [
         {
-          "url":"placeholder",
-          "title": "placeholder"
-        },
-        {
-          "url":"placeholder",
-          "title": "placeholder"
+          "url":"lesson10/weather.html",
+          "title": "Weather"
         }
       ]
     }
