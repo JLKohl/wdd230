@@ -10,5 +10,5 @@ if (day === 1 || day === 3 || day === 5) {
 
 document.getElementById('close-banner').addEventListener('click',
 function() {
-    document.getElementById('special-banner').display = `none`;
+    document.getElementById('special-banner').style.display = `none`;
 });
