@@ -13,11 +13,11 @@
       "lesson": "02",
       "links": [
         {
-          "url":"https://jlkohl.github.io/wdd230/lesson02/design-principles.html",
+          "url":"lesson02/design-principles.html",
           "title": "Design Principles"
         },
         {
-          "url":"https://jlkohl.github.io/wdd230/lesson02/media-query.html",
+          "url":"lesson02/media-query.html",
           "title": "Media query"
         }
       ]
@@ -30,7 +30,7 @@
           "title": "Combiner Exercise"
         },
         {
-          "url":"https://codepen.io/JLKohl/pen/BaeBRJo",
+          "url":"https://codepen.io/JLKohl/full/BaeBRJo",
           "title": "Psuedo Elements"
         },
         {
@@ -65,7 +65,7 @@
           "title": "Responsive Images"
         },
         {
-          "url": "https://jlkohl.github.io/wdd230/lesson06/images/landscape.webp",
+          "url": "lesson06/images/landscape.webp",
           "title": "WebP"
         }
       ]
@@ -83,15 +83,15 @@
       "lesson": "08",
       "links": [
         {
-          "url":"https://jlkohl.github.io/wdd230/lesson08/tablebuild.html",
+          "url":"lesson08/tablebuild.html",
           "title": "table"
         },
         {
-          "url":"https://jlkohl.github.io/wdd230/Form-start/index.html",
+          "url":"Form-start/index.html",
           "title": "Website Form"
         },
         {
-          "url":"https://jlkohl.github.io/wdd230/form.html",
+          "url":"form.html",
           "title": "Sign-up"
         }
       ]
@@ -104,7 +104,7 @@
           "title": "JSON file"
         },
         {
-          "url":"lessoon09/prophets.html",
+          "url":"lesson09/prophets.html",
           "title": "Latter-Day Prophets"
         }
       ]

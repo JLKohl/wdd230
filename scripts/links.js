@@ -21,7 +21,7 @@ const displayLinks = (weeks) => {
         
         week.links.forEach((link) => {
             let anchor = document.createElement("a");
-            anchor.href = baseURL + link.url;
+            anchor.href = link.url.startsWith('http') ? link.url : baseURL + link.url;
             anchor.textContent = ` - ${link.title} `;
             lesson.appendChild(anchor)
         });
