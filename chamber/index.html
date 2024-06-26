@@ -35,11 +35,14 @@
         <a href="join.html">Join</a>
     </nav>
     <button class="action">call to action</button>
-    <picture>
-        <source media="(min-width: 400px)" srcset="images/hero-small.webp">
-        <source media="(min-width: 401px)" srcset="images/hero-medium.webp">
-        <img src="images/hero-large.webp" alt="Three people having a meeting" width="1500" height="750">
-    </picture>
+    <div class="banner-container">
+        <div id="special-banner" style="display: none;">Join us for a Chamber of Commerce Meet and Greet Wednesday at 7:00pm!</div>
+        <picture>
+            <source media="(min-width: 400px)" srcset="images/hero-small.webp">
+            <source media="(min-width: 401px)" srcset="images/hero-medium.webp">
+            <img src="images/hero-large.webp" alt="Three people having a meeting" width="1500" height="750">
+        </picture>
+    </div>
     <main>
         <section class="events">
             <h2>current events</h2>
@@ -54,10 +57,11 @@
             <h2>Local Company highlights</h2>
         </section>
         <section class="weather">
-            <h2>Weather Card</h2>
-            <p>Temperature: <span id="temperature"> 45</span></p>
-            <p>Windspeed: <span id="windspeed"> 15</span></p>
-            <p>WindChill: <span id="windchill">&nbsp;</span></p>
+            <h2>Galax Weather</h2>
+            <p><span id="forecast"></span></p>
+            <figure>
+                <figcaption></figcaption>
+            </figure>
         </section>
     </main>
     <footer>
@@ -73,5 +77,7 @@
     <script src="scripts/hammenu.js"></script>
     <script src="./scripts/darkmode.js"></script>
     <script src="./scripts/windchill.js"></script>
+    <script src="scripts/weather.js"></script>
+    <script src="scripts/banner.js"></script>
 </body>
 </html>

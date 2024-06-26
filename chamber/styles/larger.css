@@ -12,6 +12,7 @@
     
     .about { 
         grid-column-start: 3;
+        grid-column-end: span 2;
         grid-row-end: span 2;
     }
     
@@ -30,6 +31,7 @@
     
     .weather {
         grid-column-start: 3;
+        grid-column-end: span 2;
         grid-row-start: 3;
         grid-row-end: span 2;
     }

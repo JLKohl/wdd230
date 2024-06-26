@@ -91,8 +91,52 @@ footer {
     background-color:var(--maincolor);
 }
 
+.banner-container {
+    position: relative;
+}
+
+#special-banner {
+    position: absolute;
+    top: 5%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    color: white;
+    background-color: rgba(102, 0, 0, 0.85);
+    height: 50px;
+    padding: 15px;
+    width: 60%;
+}
+
 .contact {
     padding: 10px;
+}
+
+.weather {
+    background-color: white;
+}
+
+.weather h2 {
+    background-color: var(--maincolor);
+    color: var(--accent1);
+}
+
+#forecast {
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+}
+
+.forecast-item {
+    margin: auto;
+    text-align: center;
+    background-color: var(--accent1);
+    border: 1.5px solid var(--accent2);
+    border-collapse: collapse;
+}
+
+.weather img {
+    height: 20%;
+    width: auto;
 }
 /*--------discovery page------------*/
 
@@ -422,6 +466,20 @@ tbody tr:nth-child(odd) td:nth-child(n+2){
         width: 100%;
         flex-wrap: wrap; /* Wrap items onto the next line if they do not fit */
         margin-bottom: 10px;
+    }
+    
+    #forecast {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #special-banner {
+        top: 10%;
+        left: 50%;
+        height: 60px;
+        padding: 10px;
+        width: 90%;
+        text-align: center;
     }
  
 }
