@@ -13,11 +13,11 @@
       "lesson": "02",
       "links": [
         {
-          "url":"lesson02/design-principles.html",
+          "url":"https://jlkohl.github.io/wdd230/lesson02/design-principles.html",
           "title": "Design Principles"
         },
         {
-          "url":"lesson02/media-query.html",
+          "url":"https://jlkohl.github.io/wdd230/lesson02/media-query.html",
           "title": "Media query"
         }
       ]
@@ -26,7 +26,7 @@
       "lesson": "03",
       "links": [
         {
-          "url":"https://jlkohl.github.io/wdd230/lesson03/images/exercises.png",
+          "url":"lesson03/images/exercises.png",
           "title": "Combiner Exercise"
         },
         {
@@ -104,7 +104,7 @@
           "title": "JSON file"
         },
         {
-          "url":"prophets.html",
+          "url":"lessoon09/prophets.html",
           "title": "Latter-Day Prophets"
         }
       ]
