@@ -98,13 +98,24 @@ footer {
 #special-banner {
     position: absolute;
     top: 5%;
-    left: 30%;
+    left: 27%;
     transform: translate(-50%, -50%);
     color: white;
     background-color: rgba(102, 0, 0, 0.85);
     height: 50px;
     padding: 15px;
-    width: 60%;
+    width: 55%;
+}
+
+#close-banner {
+    position: absolute;
+    color: white;
+    top: 5px;
+    right: 10px;
+    background: transparent;
+    border: none;
+    font-size: 15px;
+    cursor: pointer;
 }
 
 .contact {
