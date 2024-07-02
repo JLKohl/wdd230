@@ -9,42 +9,42 @@
         grid-column-end: 3;
         grid-row-end: span 2;
     }
-    
-    .about { 
+
+    .about {
         grid-column-start: 3;
         grid-column-end: span 2;
         grid-row-end: span 2;
     }
-    
+
     .highlight1 {
         grid-row: 2;
         grid-column-start: 1;
         grid-row-start: 3;
         grid-row-end: span 2;
     }
-    
+
     .highlight2 {
         grid-column-start: 2;
         grid-row-start: 3;
         grid-row-end: span 2;
     }
-    
+
     .weather {
         grid-column-start: 3;
         grid-column-end: span 2;
         grid-row-start: 3;
         grid-row-end: span 2;
     }
-    
+
     /*---------discover page--------*/
-    
+
     .local-photos{
         grid-column-start: 2;
         grid-column-end: span 3;
         grid-row-end: span 4;
-        
+
     }
-    
+
     .local-photos:hover {
         filter: contrast(50%);
     }
@@ -53,9 +53,9 @@
         grid-column-start: 1;
         grid-row-end: span 4;
     }
-    
+
     /*-----------join page-------------*/
-    
+
     .membership{
         grid-column-start: 1;
         grid-column-end: span 2;
@@ -75,5 +75,4 @@
         grid-column-end: span 2;
         grid-row-start: 1;
         grid-row-end: span 4;
-    
-}
+    }
