@@ -51,18 +51,9 @@
     }
     
     .local-photos{
-        width: 125%;
+        width: 100%;
         height: auto;
-        background-color: white;
         margin-bottom: 10px;
-    }
-
-    .local-photos:hover {
-        filter: contrast(50%);
-    }
-
-    .side-bar{
-        background-color: white;
     }
     
     .fiddlers{

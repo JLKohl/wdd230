@@ -18,10 +18,11 @@
     align-items: center;
     font-size: larger;
     font-family: 'Sedan SC';
+    border-bottom: 2px solid var(--maincolor);
 }
 
 .navigation a {
-
+    position: relative;
 	padding: 1rem;
 	text-align: center;
 	text-decoration: none;
@@ -30,9 +31,22 @@
     margin: 0;
 }
 
-.navigation a:hover {
-    text-decoration: underline;
-    text-decoration-color: var(--maincolor);
+.navigation a::before{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 4px;
+    bottom: 3px;
+    left: 0;
+    background-color: var(--maincolor);
+    visibility: hidden;
+    transition: all 0.4s ease-in-out;
+    border-radius: 20px;
+}
+
+.navigation a:hover::before {
+    visibility: visible;
+    width: 100%;
 }
 
 .banner-container{
@@ -176,7 +190,17 @@ footer {
 /*--------discovery page------------*/
 
 .local-photos {
-    background-color: var(--accent1);
+    background-color: white;
+}
+
+.local-photos img {
+    transition: all 0.3s ease-in-out;
+    border: 4px solid transparent;
+}
+
+.local-photos img:hover {
+    transform: scale(1.03);
+    border: solid 4px var(--maincolor);
 }
 
 .hidden {
@@ -190,11 +214,22 @@ footer {
     border: 0;
 }
 .side-bar {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-    grid-gap: 10px;
-    background-color: var(--accent1);
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+
+.side-bar h1 {
+    padding: 10px;
+}
+
+.side-bar p {
+    padding: 20px;
+}
+.side-bar section {
+    border: 2px solid var(--maincolor);
+    border-radius: 10px;
+    margin: 20px;
 }
 
 .fiddlers img {
@@ -239,6 +274,12 @@ figcaption {
     background-color: white;
 }
 
+#membership-header {
+    background-color: white;
+    box-shadow: 0 0 0 0;
+    border: none;
+}
+
 .membership h2{
     border: solid 2px var(--accent2);
     background-color: var(--accent1);
@@ -255,6 +296,10 @@ figcaption {
 
 .bronze h2 {
     background-color: #ce7e39;
+}
+
+.np h2 {
+    background-color: white;
 }
 
 .membership p{
@@ -497,8 +542,10 @@ figcaption {
     }
     #menu::before{
         content: "☰";
-        font-size: 30px;
+        font-size: 25px;
         background-color: white;
+        position: relative;
+        right: 0;
     }
     #menu.open::before{
         content: "X";
