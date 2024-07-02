@@ -11,17 +11,13 @@
     box-sizing: border-box;
 }
 
-.header{
-    width: 100%;
-    background-color: white;
-}
-
 .navigation {
     text-align: center;
-    background-color: var(--accent1);
     display: flex;
     justify-content: space-around;
     align-items: center;
+    font-size: larger;
+    font-family: 'Sedan SC';
 }
 
 .navigation a {
@@ -29,7 +25,9 @@
 	padding: 1rem;
 	text-align: center;
 	text-decoration: none;
+    font-size: larger;
 	color: #000;
+    margin: 0;
 }
 
 .navigation a:hover {
@@ -45,13 +43,14 @@
     bottom: 2%;
     left: 50%;
     transform: translateX(-50%);
-    color: var(--accent1);
+    color: var(--secondary);
     background-color: rgba(103, 0,0, 0.8);
-    font-size: 25px;
-    padding: 20px;
+    padding: 10px;
     border-radius: 10px;
     border: black 1px solid;
-    
+    margin-top: 0;
+    font-family: 'Sedan SC';
+    font-size: 15px;
 }
 
 #mode{
@@ -69,7 +68,7 @@ img{
 main{
     display: grid;
     grid-gap: 20px;
-    max-width: 1150px;
+    max-width: 1200px;
     margin: auto;
     font-family: 'Times New Roman', Times, serif;
     font-size: large;
@@ -81,11 +80,12 @@ body h1 {
     background-color: var(--maincolor);
     text-align: center;
     padding-top: 30px;
-    padding-bottom: 30px;   
+    padding-bottom: 30px; 
+    margin: 0;
 }
 
 body h2 {
-    font-family: 'Inconsolata';
+    font-family: 'Sedan SC';
     font-size: 1.5rem;
     text-align: center;
     padding-top: 15px;
@@ -202,6 +202,14 @@ footer {
     height: auto;
     padding: 10px;
     position: relative;
+}
+
+figcaption {
+    text-align: center;
+    color: #333;
+    font-size: 14px;
+    padding-bottom: 10px;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .fiddlers section {
@@ -479,6 +487,7 @@ footer {
         display: none;
     
     }
+
     .open a {
         display: block; 
      }

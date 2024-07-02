@@ -3,6 +3,13 @@
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(4, 1fr);
     }
+    
+    .action {
+
+        padding: 20px;
+        border-radius: 10px;
+        font-size: 25px;
+    }
 
     .events {
         grid-column-start: 1;
@@ -38,11 +45,16 @@
 
     /*---------discover page--------*/
 
+    .photo-main {
+        display: flex;
+        justify-content: center;
+    }
+    
     .local-photos{
-        grid-column-start: 2;
-        grid-column-end: span 3;
-        grid-row-end: span 4;
-
+        width: 125%;
+        height: auto;
+        background-color: white;
+        margin-bottom: 10px;
     }
 
     .local-photos:hover {
@@ -50,8 +62,15 @@
     }
 
     .side-bar{
-        grid-column-start: 1;
-        grid-row-end: span 4;
+        background-color: white;
+    }
+    
+    .fiddlers{
+        height: 500px;
+    }
+    .fiddlers img {
+        width: 50%;
+        height: auto;
     }
 
     /*-----------join page-------------*/
