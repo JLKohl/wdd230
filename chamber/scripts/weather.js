@@ -44,13 +44,15 @@ function displayResults(data) {
         
         const dateString = (forecastDate.getTime() === today.getTime()) ? 'Today' : forecastDate.toLocaleDateString('en-US', {month:'long', day:'numeric'});
         
-        const forecastItem = document.createElement("div");
+        const forecastItem = document.createElement("figure");
         forecastItem.classList.add("forecast-item");
-        forecastItem.innerHTML = `<h3>${dateString}</h3>
+        forecastItem.innerHTML = `<figcaption>${dateString}</figcaption>
             <p> ${data.list[i].main.temp} &deg;F</p>
             <img src="https://openweathermap.org/img/w/${data.list[i].weather[0].icon}.png" alt="${data.list[i].weather[0].description}">
             <p>${data.list[i].weather[0].description}</p>`;
+        const forecastDiv = document.querySelector("#forecast")
         forecastDiv.appendChild(forecastItem);
+        console.log(forecastDiv.parentElement);
     }
 }    
     

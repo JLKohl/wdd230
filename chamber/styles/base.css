@@ -19,7 +19,6 @@
     max-width: 175px;
     padding-top: .8vw;
     padding-left: 20px;
-
 }
 
 #mode{
@@ -30,6 +29,11 @@
     color: var(--accent1);
 }
 
+.clearfix::after{
+    content:"";
+    display: block;
+    clear: both;
+}
 .navigation {
     text-align: center;
     display: flex;
@@ -199,12 +203,12 @@ footer {
     height: 50px;
 }
 
-.weather h2{
+.weather {
     background-color: white;
     color: var(--maincolor);
     border-bottom: 3px solid var(--maincolor);
     font-size: 25px;
-    padding: 10px;
+    padding-bottom: 10px;
     
 }
 
@@ -220,15 +224,19 @@ footer {
     text-align: center;
     align-items: center;
     background-color: var(--accent1);
-    box-sizing: border-box;
     border-radius: 2px;
     height: 200px;
     width: 150px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-.forecast-item h3 {
+.forecast-item p {
+    font-size: 1.5vw;
+}
+
+.forecast-item figcaption{
     padding: 15px;
+    font-size: 1.5vw;
 }
 
 .weather img {

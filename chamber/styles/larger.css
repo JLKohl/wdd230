@@ -1,13 +1,13 @@
-@media (min-width: 600px){
+@media (min-width: 600px) {
     main {
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(3, 1fr);
     }
-    
+
     .body h1 {
         font-size: 30px;
     }
-    
+
     .action {
 
         padding: 20px;
@@ -19,17 +19,17 @@
         grid-column-start: 1;
         grid-column-end: span 2;
         grid-row-start: 1;
-       
+
     }
 
     .about {
         grid-column-start: 3;
         grid-column-end: span 2;
         grid-row-start: 1;
-        
+
     }
-    
-    .highlights-container{
+
+    .highlights-container {
         grid-row-start: 2;
         grid-row-end: span 1;
         grid-column-start: 1;
@@ -38,8 +38,8 @@
 
     .highlights-section {
         flex-direction: row;
-        
-        
+
+
     }
 
     .weather {
@@ -49,45 +49,44 @@
     }
 
     /*---------discover page--------*/
-
     .photo-main {
         display: flex;
         justify-content: center;
     }
-    
-    .local-photos{
+
+    .local-photos {
         width: 100%;
         height: auto;
         margin-bottom: 10px;
     }
-    
-    .fiddlers{
+
+    .fiddlers {
         height: 500px;
     }
+
     .fiddlers img {
         width: 50%;
         height: auto;
     }
 
     /*-----------join page-------------*/
-
-    .membership{
+    .membership {
         grid-column-start: 1;
         grid-column-end: span 2;
         grid-row-end: span 4;
     }
 
-    .signup{
+    .signup {
         grid-column-start: 3;
         grid-column-end: span 2;
         grid-row-end: span 4;
     }
 
     /*--------------thankyou-----------*/
-
     .thankyou h2 {
         grid-column-start: 2;
         grid-column-end: span 2;
         grid-row-start: 1;
         grid-row-end: span 4;
     }
+}
