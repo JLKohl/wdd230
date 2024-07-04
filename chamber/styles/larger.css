@@ -1,7 +1,11 @@
 @media (min-width: 600px){
     main {
         grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(4, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+    
+    .body h1 {
+        font-size: 30px;
     }
     
     .action {
@@ -13,34 +17,35 @@
 
     .events {
         grid-column-start: 1;
-        grid-column-end: 3;
-        grid-row-end: span 2;
+        grid-column-end: span 2;
+        grid-row-start: 1;
+       
     }
 
     .about {
         grid-column-start: 3;
         grid-column-end: span 2;
-        grid-row-end: span 2;
+        grid-row-start: 1;
+        
     }
-
-    .highlight1 {
-        grid-row: 2;
+    
+    .highlights-container{
+        grid-row-start: 2;
+        grid-row-end: span 1;
         grid-column-start: 1;
-        grid-row-start: 3;
-        grid-row-end: span 2;
+        grid-column-end: span 4;
     }
 
-    .highlight2 {
-        grid-column-start: 2;
-        grid-row-start: 3;
-        grid-row-end: span 2;
+    .highlights-section {
+        flex-direction: row;
+        
+        
     }
 
     .weather {
-        grid-column-start: 3;
-        grid-column-end: span 2;
+        grid-column-start: 1;
+        grid-column-end: span 4;
         grid-row-start: 3;
-        grid-row-end: span 2;
     }
 
     /*---------discover page--------*/

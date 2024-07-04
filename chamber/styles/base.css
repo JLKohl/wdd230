@@ -11,6 +11,25 @@
     box-sizing: border-box;
 }
 
+#logo{
+    position: relative;
+    float: left;
+    width: 175vw;
+    min-width: 20px;
+    max-width: 175px;
+    padding-top: .8vw;
+    padding-left: 20px;
+
+}
+
+#mode{
+    position: relative;
+    float: right;
+    font-size: 2rem;
+    cursor: pointer;
+    color: var(--accent1);
+}
+
 .navigation {
     text-align: center;
     display: flex;
@@ -18,7 +37,6 @@
     align-items: center;
     font-size: larger;
     font-family: 'Sedan SC';
-    border-bottom: 2px solid var(--maincolor);
 }
 
 .navigation a {
@@ -38,7 +56,7 @@
     height: 4px;
     bottom: 3px;
     left: 0;
-    background-color: var(--maincolor);
+    background-color: #444444;
     visibility: hidden;
     transition: all 0.4s ease-in-out;
     border-radius: 20px;
@@ -52,6 +70,7 @@
 .banner-container{
     position: relative;
 }
+
 .action {
     position: absolute;
     bottom: 2%;
@@ -67,18 +86,11 @@
     font-size: 15px;
 }
 
-#mode{
-    position: relative;
-    float: right;
-	font-size: 2rem;
-	cursor: pointer;
-}
-
-
 img{
     width: 100%;
     height: auto;
 }
+
 main{
     display: grid;
     grid-gap: 20px;
@@ -87,6 +99,12 @@ main{
     font-family: 'Times New Roman', Times, serif;
     font-size: large;
 }
+
+body {
+    min-height: 100vh;
+    position: relative;
+}
+
 body h1 {
     font-family: 'Sedan SC';
     font-size: 3rem;
@@ -94,8 +112,8 @@ body h1 {
     background-color: var(--maincolor);
     text-align: center;
     padding-top: 30px;
-    padding-bottom: 30px; 
-    margin: 0;
+    padding-bottom: 30px;
+    margin: auto;
 }
 
 body h2 {
@@ -103,7 +121,9 @@ body h2 {
     font-size: 1.5rem;
     text-align: center;
     padding-top: 15px;
-    padding-bottom: 15px;
+    padding-bottom: 10px;
+    color: var(--maincolor);
+    border-bottom: 2px solid var(--maincolor);
 }
 
 main {
@@ -120,6 +140,7 @@ section {
     padding: 10px;
     background-color: rgb(249, 239, 221);
     height: auto;
+    border-radius: 5px;
 }
 
 footer {
@@ -136,24 +157,37 @@ footer {
 #special-banner {
     position: absolute;
     top: 5%;
-    left: 27%;
+    left: 22%;
     transform: translate(-50%, -50%);
-    color: white;
-    background-color: rgba(102, 0, 0, 0.85);
+    color: black;
+    background-color: rgba(220, 236, 239, 0.85);
     height: 50px;
     padding: 15px;
-    width: 55%;
+    width: 45%;
+    border-radius: 5px;
 }
 
 #close-banner {
     position: absolute;
-    color: white;
+    color: black;
     top: 5px;
     right: 10px;
     background: transparent;
     border: none;
     font-size: 15px;
     cursor: pointer;
+}
+.highlights-container{
+    padding-bottom: 20px;
+}
+
+.highlights-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 50px;
+    padding-bottom: 25px;
 }
 
 .contact {
@@ -162,29 +196,43 @@ footer {
 
 .weather {
     background-color: white;
+    height: 50px;
 }
 
-.weather h2 {
-    background-color: var(--maincolor);
-    color: var(--accent1);
+.weather h2{
+    background-color: white;
+    color: var(--maincolor);
+    border-bottom: 3px solid var(--maincolor);
+    font-size: 25px;
+    padding: 10px;
+    
 }
 
 #forecast {
     display: flex;
     justify-content: space-around;
-    padding: 30px;
+    padding: 60px;
+    background-color: white;
 }
 
 .forecast-item {
     margin: auto;
     text-align: center;
+    align-items: center;
     background-color: var(--accent1);
-    border: 1.5px solid var(--accent2);
-    border-collapse: collapse;
+    box-sizing: border-box;
+    border-radius: 2px;
+    height: 200px;
+    width: 150px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.forecast-item h3 {
+    padding: 15px;
 }
 
 .weather img {
-    height: 20%;
+    height: 30%;
     width: auto;
 }
 /*--------discovery page------------*/
@@ -235,7 +283,7 @@ footer {
 .fiddlers img {
     width: 80%;
     height: auto;
-    padding: 10px;
+    img: 10px;
     position: relative;
 }
 
@@ -248,11 +296,15 @@ figcaption {
 }
 
 .fiddlers section {
+    padding: 15px;
+}
+
+.fiddlers img {
     padding: 20px;
 }
 
 .fiddlers p {
-    padding: 30px;
+    padding: 5px;
 }
 
 /*------------join page-------------*/
@@ -284,6 +336,7 @@ figcaption {
     border: solid 2px var(--accent2);
     background-color: var(--accent1);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    color: black;
 }
 
 .gold  h2 {
@@ -397,7 +450,6 @@ figcaption {
     border: solid 1px #ddd;
     border-radius: 6px;
     padding: .75rem;
-    color: var(--accent1);
     width: 100%;
     max-width: 400px;
     appearance: none;
@@ -432,6 +484,16 @@ figcaption {
     padding: 100px;
 }
 
+.thankyou-page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.thankyou-footer{
+    margin-top: auto;
+}
+
 
 /*------------directory-----------*/
 
@@ -446,9 +508,11 @@ figcaption {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: white;
+    background-color:var(--accent1);
     box-shadow: 0px 1px 5px rgba(0,0,0,0.6);
     padding: 1.5rem;
+    width: 275px;
+    height: 450px;
 
 }
 
@@ -499,6 +563,7 @@ figcaption {
     align-items: center;
     width: 100%;
     margin-bottom: 10px; 
+    height:auto;
 }
 
 
@@ -506,8 +571,12 @@ figcaption {
     display: none;
 }
 
+.list .description {
+    display: none;
+}
+
 .list .card:nth-child(even) {
-    background-color: var(--accent1);
+    background-color: white;
 }
 
 .grid .card .card-title {
@@ -531,6 +600,10 @@ figcaption {
     .navigation a{
         display: none;
     
+    }
+    
+    body h1 {
+        font-size: 10vw;
     }
 
     .open a {

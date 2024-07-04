@@ -30,7 +30,7 @@ function displayResults(data) {
     
     let count = 0;
     
-    for (let i = 0; i < data.list.length && count < 4 ; i++){
+    for (let i = 0; i < data.list.length && count < 6 ; i++){
         const forecastDate = new Date(data.list[i].dt * 1000);
         forecastDate.setHours(0, 0, 0, 0);
         
@@ -47,7 +47,7 @@ function displayResults(data) {
         const forecastItem = document.createElement("div");
         forecastItem.classList.add("forecast-item");
         forecastItem.innerHTML = `<h3>${dateString}</h3>
-            <p>Temperature: ${data.list[i].main.temp} &deg;F</p>
+            <p> ${data.list[i].main.temp} &deg;F</p>
             <img src="https://openweathermap.org/img/w/${data.list[i].weather[0].icon}.png" alt="${data.list[i].weather[0].description}">
             <p>${data.list[i].weather[0].description}</p>`;
         forecastDiv.appendChild(forecastItem);
