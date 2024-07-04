@@ -34,6 +34,7 @@
     display: block;
     clear: both;
 }
+
 .navigation {
     text-align: center;
     display: flex;
@@ -104,11 +105,6 @@ main{
     font-size: large;
 }
 
-body {
-    min-height: 100vh;
-    position: relative;
-}
-
 body h1 {
     font-family: 'Sedan SC';
     font-size: 3rem;
@@ -140,7 +136,6 @@ main {
 
 section {
     text-align: center;
-    display: block;
     padding: 10px;
     background-color: rgb(249, 239, 221);
     height: auto;
@@ -200,19 +195,18 @@ footer {
 
 .weather {
     background-color: white;
-    height: 50px;
 }
 
-.weather {
+.weather h2{
     background-color: white;
     color: var(--maincolor);
     border-bottom: 3px solid var(--maincolor);
     font-size: 25px;
-    padding-bottom: 10px;
+    padding: 10px;
     
 }
 
-#forecast {
+.forecast {
     display: flex;
     justify-content: space-around;
     padding: 60px;
@@ -224,19 +218,15 @@ footer {
     text-align: center;
     align-items: center;
     background-color: var(--accent1);
+    box-sizing: border-box;
     border-radius: 2px;
     height: 200px;
     width: 150px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-.forecast-item p {
-    font-size: 1.5vw;
-}
-
-.forecast-item figcaption{
+.forecast-item h3 {
     padding: 15px;
-    font-size: 1.5vw;
 }
 
 .weather img {
@@ -369,52 +359,6 @@ figcaption {
     background-color: var(--accent1);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
-
-/*table {*/
-/*    margin: 10% auto 10px;*/
-/*    border: thin solid gray;*/
-/*    box-shadow: 0 0 5px grey;*/
-/*    border-collapse: collapse;*/
-/*    background-color: var(--accent1);*/
-/*}*/
-
-/*thead tr:nth-child(1) {*/
-/*    font-size: larger;*/
-/*    height: 50px;*/
-/*    width: auto;*/
-/*    background-color: var(--maincolor);*/
-/*    color: var(--accent1);*/
-/*}*/
-
-/*thead tr:nth-child(2) {*/
-/*    border-collapse: collapse;*/
-/*    background-color: var(--maincolor);*/
-/*    color: var(--accent1);*/
-/*}*/
-
-
-/*tbody tr td:first-child {*/
-/*    background-color: #707070;*/
-/*    color: var(--accent1);*/
-/*}*/
-
-/*td {*/
-/*    padding: 5px;*/
-/*    border: thin solid darkgray;*/
-/*}*/
-
-/*caption {*/
-/*    caption-side: bottom;*/
-/*    padding: 2px;*/
-/*}*/
-
-/*.caption2 {*/
-/*    font-size: smaller;*/
-/*}*/
-
-/*tbody tr:nth-child(odd) td:nth-child(n+2){*/
-/*    background-color: #e5e5e5;*/
-/*}*/
 
 /*-------------form--------------*/
 
@@ -601,6 +545,7 @@ figcaption {
         justify-content: center;
         grid-gap:0;
     }
+    
     .navigation {
         display: flex;
         flex-direction: column;
@@ -617,6 +562,7 @@ figcaption {
     .open a {
         display: block; 
      }
+    
     #menu{
         background-color: var(--accent1);
         border: none;
@@ -632,6 +578,7 @@ figcaption {
         content: "X";
         font-size: 20px;
     }
+    
     .list {
         box-sizing: border-box;
         display: flex;
@@ -650,7 +597,7 @@ figcaption {
         margin-bottom: 10px;
     }
     
-    #forecast {
+    .forecast {
         flex-direction: column;
         align-items: center;
     }

@@ -1,7 +1,6 @@
 
-const forecastDiv = document.querySelector("#forecast");
-// const weatherIcon = document.querySelector("#weather-icon");
-// const captionDesc = document.querySelector('figcaption');
+const forecastDiv = document.querySelector(".forecast");
+
 
 const url = "https://api.openweathermap.org/data/2.5/forecast?lat=36.66&lon=-80.92&appid=d17513fe5a9ef991892e8744ddca95c9&units=imperial";
 
@@ -20,7 +19,8 @@ async function apiFetch(url) {
     }
 }
 
-function displayResults(data) { 
+function displayResults(data) {
+    
     let prevDate = new Date();
     prevDate.setDate(prevDate.getDate() - 1);
     prevDate.setHours(0, 0, 0, 0);
@@ -44,15 +44,14 @@ function displayResults(data) {
         
         const dateString = (forecastDate.getTime() === today.getTime()) ? 'Today' : forecastDate.toLocaleDateString('en-US', {month:'long', day:'numeric'});
         
-        const forecastItem = document.createElement("figure");
+        const forecastItem = document.createElement("div");
         forecastItem.classList.add("forecast-item");
-        forecastItem.innerHTML = `<figcaption>${dateString}</figcaption>
+        forecastItem.innerHTML = `<h3>${dateString}</h3>
             <p> ${data.list[i].main.temp} &deg;F</p>
             <img src="https://openweathermap.org/img/w/${data.list[i].weather[0].icon}.png" alt="${data.list[i].weather[0].description}">
             <p>${data.list[i].weather[0].description}</p>`;
-        const forecastDiv = document.querySelector("#forecast")
         forecastDiv.appendChild(forecastItem);
-        console.log(forecastDiv.parentElement);
+        
     }
 }    
     

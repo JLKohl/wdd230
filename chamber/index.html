@@ -1,86 +1,82 @@
 <!DOCTYPE html>
 <html lang="en-US">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Jennifer Kohl">
-    <meta name="description" content="course assignment Galax City Chamber of Commerce for WDD 230 - Web Frontend Development, BYU Idaho.">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Jennifer Kohl">
+        <meta name="description" content="course assignment Galax City Chamber of Commerce for WDD 230 - Web Frontend Development, BYU Idaho.">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Sedan+SC&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Sedan+SC&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Sedan+SC&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/base.css">
-    <link rel="stylesheet" href="styles/medium.css">
-    <link rel="stylesheet" href="styles/larger.css">
-    <link rel="icon" href="favicon.ico">
-    <meta property="og:title" content="Galax City Chamber of Commerce - Kohl - WDD 230">
-    <meta property="og:type" content="website">
-    <meta property="og:image" content="https://www.romanticasheville.com/sites/default/files/images/basic_page/blue_ridge_mountains_NC.jpg">
-    <meta property="og:url" content="https://jlkohl.github.io/wdd230/chamber/index.html">
-    <title>Galax City Chamber of Commerce</title>
-</head>
-<body>
-    <header>
-        <div id="mode"> ☽ </div>
-        <div id="logo"><img src="images/gccc-photo.png" alt="Galax City Chamber of Commerce logo"></div>
-        <h1>Galax City Chamber of Commerce</h1>
-    </header>
-    <button id="menu" title="menu"></button>
-    <nav class="navigation">
-        <a href="#">Home</a>
-        <a href="discover.html">Discovery</a>
-        <a href="directory.html">Directory</a>
-        <a href="join.html">Join</a>
-    </nav>
-    <div class="clearfix"></div>
-    <div class="banner-container">
-        <a href="join.html"><button class="action">Join our Chamber</button></a>
-        <div id="special-banner" style="display: none;">Join us for a Chamber of Commerce Meet and Greet Wednesday at 7:00pm!
-        <button id="close-banner">X</button>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Sedan+SC&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles/normalize.css">
+        <link rel="stylesheet" href="styles/base.css">
+        <link rel="stylesheet" href="styles/medium.css">
+        <link rel="stylesheet" href="styles/larger.css">
+        <link rel="icon" href="favicon.ico">
+        <meta property="og:title" content="Galax City Chamber of Commerce - Kohl - WDD 230">
+        <meta property="og:type" content="website">
+        <meta property="og:image" content="https://www.romanticasheville.com/sites/default/files/images/basic_page/blue_ridge_mountains_NC.jpg">
+        <meta property="og:url" content="https://jlkohl.github.io/wdd230/chamber/index.html">
+        <title>Galax City Chamber of Commerce</title>
+    </head>
+    <body>
+        <header>
+            <div id="mode"> ☽ </div>
+            <div id="logo"><img src="images/gccc-photo.png" alt="Galax City Chamber of Commerce logo"></div>
+            <h1>Galax City Chamber of Commerce</h1>
+        </header>
+        <button id="menu" title="menu"></button>
+        <nav class="navigation">
+            <a href="#">Home</a>
+            <a href="discover.html">Discovery</a>
+            <a href="directory.html">Directory</a>
+            <a href="join.html">Join</a>
+        </nav>
+        <div class="clearfix"></div>
+        <div class="banner-container">
+            <a href="join.html"><button class="action">Join our Chamber</button></a>
+            <div id="special-banner" style="display: none;">Join us for a Chamber of Commerce Meet and Greet Wednesday at 7:00pm!
+            <button id="close-banner">X</button>
+            </div>
+            <picture>
+                <source media="(max-width: 400px)" srcset="images/hero-small.webp">
+                <source media="(min-width: 401px) and (max-width: 1199px)" srcset="images/hero-medium.webp">
+                <img src="images/hero-large.webp" alt="Downtown Galax, Rex theater in a sunset" width="1500" height="750">
+            </picture>
         </div>
-        <picture>
-            <source media="(max-width: 400px)" srcset="images/hero-small.webp">
-            <source media="(min-width: 401px) and (max-width: 1199px)" srcset="images/hero-medium.webp">
-            <img src="images/hero-large.webp" alt="Three people having a meeting" width="1500" height="750">
-        </picture>
-    </div>
-    <main>
-        <section class="events">
-            <h2>Current Events</h2>
-        </section>
-        <section class="about">
-            <h2>About Chamber</h2>
-        </section>
-        <section class="highlights-container">
-            <h2>Local Company Highlights</h2>
-            <div class="highlights-section"></div>
-        </section>
-        <section class="weather">
-            <h2>Galax Weather</h2>
-            <p><span id="forecast"></span></p>
-            <figure>
-                <figcaption></figcaption>
-            </figure>
-        </section>
-    </main>
-    <footer>
-        <div class="contact">
-            <p>Address: 1234 W Galax Dr</p>
-            <p>Phone: (276)237-1234</p>
-            <p>E-mail: galaxcitycommerce@galax.com</p>
-        </div>
-        <p>Jennifer Kohl | Project for WDD 230 - BYUi | &copy; <span id="year"></span></p>
-        <p id="lastModified"></p>
-    </footer>
-    <script src="scripts/getdates.js"></script>
-    <script src="scripts/hammenu.js"></script>
-    <script src="./scripts/darkmode.js"></script>
-<!--    <script src="./scripts/windchill.js"></script>-->
-    <script src="scripts/weather.js"></script>
-    <script src="scripts/banner.js"></script>
-    <script src="scripts/filtermembers.js"></script>
-</body>
+        <main>
+            <section class="events">
+                <h2>Current Events</h2>
+            </section>
+            <section class="about">
+                <h2>About Chamber</h2>
+            </section>
+            <section class="highlights-container">
+                <h2>Local Company Highlights</h2>
+                <div class="highlights-section"></div>
+            </section>
+            <section class="weather">
+                <h2>Galax Weather</h2>
+                <div class="forecast"></div>
+            </section>
+        </main>
+        <footer>
+            <div class="contact">
+                <p>Address: 1234 W Galax Dr</p>
+                <p>Phone: (276)237-1234</p>
+                <p>E-mail: galaxcitycommerce@galax.com</p>
+            </div>
+            <p>Jennifer Kohl | Project for WDD 230 - BYUi | &copy; <span id="year"></span></p>
+            <p id="lastModified"></p>
+        </footer>
+        <script src="scripts/getdates.js"></script>
+        <script src="scripts/hammenu.js"></script>
+        <script src="./scripts/darkmode.js"></script>
+        <script src="scripts/weather.js"></script>
+        <script src="scripts/banner.js"></script>
+        <script src="scripts/filtermembers.js"></script>
+    </body>
 </html>
