@@ -23,7 +23,6 @@ const displayMembers = (members) => {
         card.className ="card";
 
         const img = document.createElement("img");
-        console.log("Image source: " + member.icon);
         img.src = member.icon;
         img.alt = member.displayName;
         card.appendChild(img);
