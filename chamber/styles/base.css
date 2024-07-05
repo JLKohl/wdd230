@@ -134,12 +134,28 @@ main {
 
 }
 
-section {
+.events, .about {
     text-align: center;
     padding: 10px;
     background-color: rgb(249, 239, 221);
     height: auto;
     border-radius: 5px;
+}
+
+.events p, .about p, ul{
+    padding-top: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: left;
+    font-size: 20px;
+}
+
+section li {
+    padding-top: 30px;
+}
+
+section a {
+    text-decoration: none;
 }
 
 footer {
@@ -266,29 +282,38 @@ footer {
 }
 
 .side-bar h1 {
-    padding: 10px;
+    padding: 20px;
 }
 
 .side-bar p {
     padding: 20px;
 }
+
 .side-bar section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
     border: 2px solid var(--maincolor);
     border-radius: 10px;
-    margin: 20px;
+    margin-bottom: 20px;
+    max-width: 65%;
+    text-align: center;
+    background-color: var(--secondary);
 }
 
 .fiddlers img {
     width: 80%;
     height: auto;
-    img: 10px;
     position: relative;
+    padding: 20px;
 }
 
 figcaption {
     text-align: center;
     color: #333;
-    font-size: 14px;
+    font-size: 18px;
     padding-bottom: 10px;
     font-family: 'Times New Roman', Times, serif;
 }
@@ -465,6 +490,7 @@ figcaption {
     padding: 1.5rem;
     width: 275px;
     height: 450px;
+    margin: auto;
 
 }
 

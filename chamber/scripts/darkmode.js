@@ -1,29 +1,32 @@
 const modeButton = document.querySelector("#mode");
+const body = document.body;
 const logo = document.querySelector("#logo");
+const nav = document.querySelector("#nav");
+const nava =document.querySelector("#nav a");
 const button = document.querySelector(".action");
-const section = document.querySelector("section");
+const section = document.querySelectorAll("section");
 const weather = document.querySelector(".weather");
 const heading = document.querySelector("h1");
+const heading2 = document.querySelectorAll("h2");
 const footer = document.querySelector("footer");
 
 modeButton.addEventListener("click", () => {
 	console.log("mode button clicked");
 	if (modeButton.textContent.trim() === "☽") {
-		logo.src = "images/gccc-darkmode.png";
+		body.style.backgroundColor = "#000"
+		body.style.color = "#fff";
 		heading.style.background = "#484242";
-		button.style.background = "#484242";
-		button.style.color = "#fff";
-		section.style.background = "#484242";
-		section.style.color = "#fff";
+		heading2.forEach(h => h.style.color = "#fff");
+		section.forEach(s => s.style.backgroundcolor = "#484242");
 		weather.style.background = "#484242";
 		weather.style.color = "#fff";
 		footer.style.background = "#484242";
 		modeButton.textContent = "🔆";
 	} else {
-		logo.src = "images/gccc-photo.png";
+		body.style.backgroundColor = "#fff"
+		body.style.color = "#000";
 		heading.style.background = "#660000";
-		button.style.background = "#D8D8D8";
-		button.style.color = "#000";
+		heading2.forEach(h => h.style.color = "#660000");
 		weather.style.background = "#f9efdd";
 		weather.style.color = "#000";
 		footer.style.background = "#660000";
