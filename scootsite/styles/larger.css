@@ -1,0 +1,87 @@
+@media (min-width: 600px) {
+    main {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+    .action {
+
+        padding: 20px;
+        border-radius: 10px;
+        font-size: 25px;
+    }
+
+    .events {
+        grid-column-start: 1;
+        grid-column-end: span 2;
+        grid-row-start: 1;
+
+    }
+
+    .about {
+        grid-column-start: 3;
+        grid-column-end: span 2;
+        grid-row-start: 1;
+
+    }
+
+    .highlights-container {
+        grid-row-start: 2;
+        grid-row-end: span 1;
+        grid-column-start: 1;
+        grid-column-end: span 4;
+    }
+
+    .highlights-section {
+        flex-direction: row;
+
+
+    }
+
+    .weather {
+        grid-column-start: 1;
+        grid-column-end: span 4;
+        grid-row-start: 3;
+    }
+
+    /*---------discover page--------*/
+    .photo-main {
+        display: flex;
+        justify-content: center;
+    }
+
+    .local-photos {
+        width: 100%;
+        height: auto;
+        margin-bottom: 10px;
+    }
+
+    .fiddlers {
+        height: 500px;
+    }
+
+    .fiddlers img {
+        width: 50%;
+        height: auto;
+    }
+
+    /*-----------join page-------------*/
+    .membership {
+        grid-column-start: 1;
+        grid-column-end: span 2;
+        grid-row-end: span 4;
+    }
+
+    .signup {
+        grid-column-start: 3;
+        grid-column-end: span 2;
+        grid-row-end: span 4;
+    }
+
+    /*--------------thankyou-----------*/
+    .thankyou h2 {
+        grid-column-start: 2;
+        grid-column-end: span 2;
+        grid-row-start: 1;
+        grid-row-end: span 4;
+    }
+}
