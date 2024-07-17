@@ -1,8 +1,8 @@
 :root {
-    --maincolor: #660000;
-    --secondary: #f9efdd;
-    --accent1: #f5f5f5;
-    --accent2: #000000;
+    --accentorange: #FF7E3E;
+    --accentblue: #173966;
+    --accentred: #BF372A;
+    --accentbeige: #F1E6D6;
 }
 
 *{
@@ -109,7 +109,7 @@ body h1 {
     font-family: 'Sedan SC';
     font-size: 3rem;
     color: var(--accent1);
-    background-color: var(--maincolor);
+    background-color: var(--orange);
     text-align: center;
     padding-top: 30px;
     padding-bottom: 30px;
