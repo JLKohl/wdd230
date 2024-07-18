@@ -3,8 +3,67 @@
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(3, 1fr);
     }
+    
+    .hero {
+        position: relative;
+    }
+    
+    .navigation-container{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        position: absolute;
+        background-color: rgba(255,255,255,0.65);
+        width: 60%;
+        margin-left: 20%;
+        top: 4vw;
+        border-radius: 50px;
+        height: 150px;
+        border: 2px solid var(--accentblue);
+    }
+    
+    .header {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        
+    }
+    
+    .header h1 {
+        font-size: 45px;
+    }
+    
+    
+    #logo {
+        height: 100%;
+    }
+    
+    #menu {
+        visibility: hidden;
+    }
+    
+    .buttons{
+        flex-direction: row;
+        width: 30%;
+        padding-bottom: 100px;
+        height: 0;
+       
+    }
+    
+    .button1 {
+        height: 50px;
+    }
+    
+    .button2 {
+        height: 50px;
+    }
+    
+    
+    .navigation{
+        font-size: larger;
+    }
+    
     .action {
-
         padding: 20px;
         border-radius: 10px;
         font-size: 25px;
