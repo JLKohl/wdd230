@@ -52,20 +52,20 @@
     
     .buttons{
         flex-direction: row;
-        width: 30%;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 100%;
         padding-bottom: 100px;
         height: 0;
        
     }
     
-    .button1 {
-        height: 50px;
+    .button1, .button2 {
+        height: 75px;
+        width: 200px;
+        font-size: 25px;
+        
     }
-    
-    .button2 {
-        height: 50px;
-    }
-    
     
     .navigation{
         font-size: larger;
@@ -139,7 +139,9 @@
                 0 5px 0 0 var(--accentorange),
                 0 -5px 0 0 var(--accentorange),
                 0 10px 0 0 var(--accentblue),
-                0 -10px 0 0 var(--accentblue)
+                0 -10px 0 0 var(--accentblue);
+        margin-bottom: 20px;
+        
     }
     
     .location {
