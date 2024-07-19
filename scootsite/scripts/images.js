@@ -1,7 +1,7 @@
 var imageCount = 1;
 var imageDescriptions = [
     'the Plaza del Sol, San Miguel of Cozumel, Mexico. Cozumel',
-    'Description for this 2',
+    'Aerial view of Chen Rio beach in Cozumel',
     'thing for image 3',
     'Description is for image 4',
     'Description that I have for image 5',
