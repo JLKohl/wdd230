@@ -208,6 +208,10 @@ footer {
 .social img {
     height: 100px;
     width: auto;
+    padding: 10px;
+    margin-left: 5%;
+    align-items: center;
+    justify-content: space-evenly;
     
 }
 
@@ -216,6 +220,16 @@ footer {
     color:white;
     font-size: 35px;
     width: 100vw;
+}
+
+.location p {
+    color: white;
+    text-align: center;
+    justify-content: center;
+    width: 90%;
+    font-size: medium;
+    margin: auto;
+    padding: 10px;
 }
 
 #slideshow{
@@ -287,6 +301,11 @@ footer {
     height: 30%;
     width: auto;
 }
+
+footer{
+    padding: 15px;
+}
+
 /*--------discovery page------------*/
 
 .local-photos {
