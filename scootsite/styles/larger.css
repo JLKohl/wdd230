@@ -76,6 +76,20 @@
         font-size: 25px;
     }
     
+    .social {
+        width: auto;
+        padding: 10px;
+        margin-left: 10px;
+        grid-column-start: 1;
+        grid-column-end: span 2;
+        border: 5px solid var(--accentorange);
+        border-radius: 10px;
+    }
+    
+    .social h2 {
+        font-size: 35px;
+    }
+    
     .photos h2 {
         border-top: 1px solid var(--accentblue);
     }
@@ -125,6 +139,7 @@
         border-right: 1px solid var(--accentorange);
         border-top-right-radius: 10px;
         border-bottom-right-radius: 10px;
+        width: auto;
     }
     
     .weather h2 {

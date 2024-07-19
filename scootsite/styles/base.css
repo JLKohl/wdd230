@@ -200,10 +200,22 @@ footer {
     width: 100vw;
 }
 
+.social {
+    border: 2px solid var(--accentorange);
+    width: 100vw;
+}
+
+.social img {
+    height: 100px;
+    width: auto;
+    
+}
+
 .location {
     background-color: var(--accentblue);
     color:white;
     font-size: 35px;
+    width: 100vw;
 }
 
 #slideshow{
