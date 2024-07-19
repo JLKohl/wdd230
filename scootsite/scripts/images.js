@@ -2,14 +2,14 @@ var imageCount = 1;
 var imageDescriptions = [
     'the Plaza del Sol, San Miguel of Cozumel, Mexico. Cozumel',
     'Aerial view of Chen Rio beach in Cozumel',
-    'thing for image 3',
-    'Description is for image 4',
-    'Description that I have for image 5',
-    'test for image 6'
+    'White sand beach in Cozumel',
+    'Port in Puerta Maya - Cozumel, Mexico',
+    'Turtle in the clear blue water of Cozumel Mexico',
+    'Cozumel sign during sunrise Over the Caribbean Sea '
 ];
 
 function changeImage(){
-    document.getElementById("slideshowImage").src = 'https://picsum.photos/400/200?random=beach' + imageCount;
+    document.getElementById("slideshowImage").src = 'images/image' + imageCount + '.webp';
     document.getElementById("imageDescription").textContent = imageDescriptions[imageCount-1];
     imageCount++;
     if (imageCount > 6) {
@@ -17,4 +17,4 @@ function changeImage(){
     }
 }
 
-setInterval(changeImage, 2000);
+setInterval(changeImage, 3000);
