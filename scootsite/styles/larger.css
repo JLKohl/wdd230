@@ -1,7 +1,7 @@
 @media (min-width: 600px) {
     main {
         grid-template-columns: repeat(3, 1fr) 300px;
-        grid-template-rows: repeat(3, 1fr);
+        grid-template-rows: repeat(4, 1fr);
     }
     
     .hero {
@@ -86,10 +86,11 @@
     }
     .photos, .photos h2 {
         grid-column-start: 3;
-        grid-column-end: span 2;
+        grid-column-end: span all;
         border-top-left-radius: 10px;
         border-bottom-left-radius: 10px;
         width: auto;
+        
     }
     
     #slideshowImage {
@@ -98,6 +99,32 @@
         padding-top: 40px;
         height: 300px;
         width: auto;
+        grid-column-end: span 2;
+    }
+    
+    .rentals {
+        grid-column-start: 1;
+        grid-column-end: span all;
+        background-color: var(--accentbeige);
+        border: none;
+        border-top: 5px solid var(--accentred);
+        border-bottom: 5px solid var(--accentred);
+        box-shadow: 
+                0 5px 0 0 var(--accentorange),
+                0 -5px 0 0 var(--accentorange),
+                0 10px 0 0 var(--accentblue),
+                0 -10px 0 0 var(--accentblue)
+    }
+    
+    .location {
+        grid-column-start: 1;
+        grid-column-end: span 3;
+        grid-row-start: 3;
+        border-top: 1px solid var(--accentorange);
+        border-bottom: 1px solid var(--accentorange);
+        border-right: 1px solid var(--accentorange);
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
     }
     
     .weather h2 {
@@ -109,7 +136,7 @@
     .weather {
         grid-column-start: 1;
         grid-column-end: span 2;
-        grid-row-start: 3;
+        grid-row-start: 4;
         border-top-right-radius: 10px;
         border-bottom-right-radius: 10px;
         width: auto;

@@ -200,6 +200,12 @@ footer {
     width: 100vw;
 }
 
+.location {
+    background-color: var(--accentblue);
+    color:white;
+    font-size: 35px;
+}
+
 #slideshow{
     width: 100vw;
     height: auto;
