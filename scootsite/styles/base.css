@@ -228,6 +228,18 @@ footer {
     padding: 10px;
 }
 
+.rentals {
+    background-color: var(--accentbeige);
+    border: none;
+    border-top: 5px solid var(--accentred);
+    border-bottom: 5px solid var(--accentred);
+    box-shadow:
+            0 5px 0 0 var(--accentorange),
+            0 -5px 0 0 var(--accentorange),
+            0 10px 0 0 var(--accentblue),
+            0 -10px 0 0 var(--accentblue)
+}
+
 .weather, .weather h2{
     background-color: var(--accentorange);
     color: var(--accentblue);
