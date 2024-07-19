@@ -11,12 +11,32 @@
     box-sizing: border-box;
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    max-width: 100vw;
+}
+
+footer {
+    margin-top: auto;
+}
+
 #logo{
-    width: 35%;
+    width: 20%;
 }
 
 .navigation {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
     font-family: 'Sedan SC';
+    width: 100%;
+    background-color: var(--accentorange);
+}
+
+#home-nav {
+    background-color: transparent;
 }
 
 .navigation a {
@@ -32,6 +52,7 @@
 .navigation a::before{
     content: "";
     position: absolute;
+    float: right;
     width: 0;
     height: 4px;
     bottom: 3px;
@@ -47,7 +68,14 @@
     width: 100%;
 }
 
-.banner-container{
+
+.clearfix::after{
+    content:"";
+    display: block;
+    clear: both;
+}
+
+.header-container{
     position: relative;
 }
 
@@ -90,20 +118,21 @@ img{
 main{
     display: grid;
     grid-gap: 20px;
-    max-width: 1200px;
-    margin: auto;
+    max-width: 100vw;
+    margin: 0;
     font-family: 'Times New Roman', Times, serif;
     font-size: large;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 body h1 {
     font-family: 'Sedan SC';
-    font-size: 3rem;
-    text-align: center;
+    font-size: 2rem;
     margin: auto;
 }
 
-body h2 {
+body h2, h3 {
     font-family: 'Sedan SC';
     font-size: 1.5rem;
     text-align: center;
@@ -113,36 +142,9 @@ body h2 {
     border-bottom: 2px solid var(--maincolor);
 }
 
-main {
-    display: grid;
-    grid-gap: 20px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-
-}
-
-.events, .about {
-    text-align: center;
-    padding: 10px;
-    background-color: rgb(249, 239, 221);
-    height: auto;
-    border-radius: 5px;
-}
-
-.events p, .about p, ul{
-    padding-top: 30px;
-    padding-left: 20px;
-    padding-right: 20px;
-    text-align: left;
-    font-size: 20px;
-}
-
-section li {
-    padding-top: 30px;
-}
-
-section a {
+a {
     text-decoration: none;
+    color: black;
 }
 
 footer {
@@ -150,6 +152,7 @@ footer {
     text-align: center;
     color: white;
     background-color:var(--accentblue);
+    
 }
 
 #special-banner {
@@ -186,57 +189,68 @@ footer {
     }
 }
 
-.highlights-container{
-    padding-bottom: 20px;
+.photos {
+    height:400px;
 }
 
-.highlights-section {
-    display: flex;
-    flex-direction: column;
+.photos, .photos h2 {
+    background-color: var(--accentred);
+    color: black;
+    font-size: 35px;
+    width: 100vw;
+}
+
+#slideshow{
+    width: 100vw;
+    height: auto;
+    overflow: hidden;
+    position: relative;
     align-items: center;
-    justify-content: space-between;
+}
+
+#slideshowImage {
+    width: 100vw;
+    height: auto;
     padding-top: 50px;
-    padding-bottom: 25px;
+    position: absolute;
+    transition: opacity 2s ease;
 }
 
-.contact {
+#imageDescription {
+    font-size: medium;
+    text-align: center;
     padding: 10px;
 }
 
-.weather {
-    background-color: white;
-}
-
-.weather h2{
-    background-color: white;
-    color: var(--maincolor);
-    border-bottom: 3px solid var(--maincolor);
-    font-size: 25px;
-    padding: 10px;
-    
+.weather, .weather h2{
+    background-color: var(--accentorange);
+    color: var(--accentblue);
+    font-size: 30px;
+    width: 100vw;
 }
 
 .forecast {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     padding: 60px;
-    background-color: white;
 }
 
 .forecast-item {
     margin: auto;
     text-align: center;
     align-items: center;
-    background-color: var(--accent1);
+    background-color: white;
     box-sizing: border-box;
     border-radius: 2px;
     height: 200px;
     width: 150px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    border: 1px solid var(--accentblue);
 }
 
 .forecast-item h3 {
-    padding: 15px;
+    padding: 5px;
+    color:white;
+    background-color: var(--accentblue);
 }
 
 .weather img {
@@ -564,6 +578,7 @@ figcaption {
     body{    
         justify-content: center;
         grid-gap:0;
+        max-width: 600px;
     }
     
     .navigation {
@@ -586,13 +601,14 @@ figcaption {
     #menu{
         background-color: var(--accent1);
         border: none;
+        position: relative;
+        float: right;
+        left: 0;
     }
     #menu::before{
         content: "☰";
         font-size: 25px;
-        background-color: white;
-        position: relative;
-        right: 0;
+        background-color: var(--accentorange);
     }
     #menu.open::before{
         content: "X";
@@ -623,12 +639,13 @@ figcaption {
     }
     
     #special-banner {
-        top: 10%;
-        left: 50%;
+        top: 0;
+        left: 0;
         height: 60px;
         padding: 10px;
-        width: 90%;
+        width: 100%;
         text-align: center;
+        font-size: large;
     }
  
 }

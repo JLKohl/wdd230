@@ -8,6 +8,10 @@
         position: relative;
     }
     
+    body {
+        min-width: 100vw;
+    }
+    
     .navigation-container{
         display: flex;
         align-items: center;
@@ -32,7 +36,10 @@
     .header h1 {
         font-size: 45px;
     }
-    
+     section {
+         width: 100%;
+         padding: 0;
+     }
     
     #logo {
         height: 100%;
@@ -68,13 +75,46 @@
         border-radius: 10px;
         font-size: 25px;
     }
-
+    
+    .photos h2 {
+        border-top: 1px solid var(--accentblue);
+    }
+    
+    .photos {
+        border-left: 1px solid var(--accentblue);
+        border-bottom: 1px solid var(--accentblue);
+    }
+    .photos, .photos h2 {
+        grid-column-start: 3;
+        grid-column-end: span 2;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        width: auto;
+    }
+    
+    #slideshowImage {
+        padding-left: 7%;
+        padding-right: 10px;
+        padding-top: 40px;
+        height: 300px;
+        width: auto;
+    }
+    
+    .weather h2 {
+        width: auto;
+        border-top-right-radius: 10px;
+        border-top: 1px solid var(--accentblue);
+    }
+    
     .weather {
-        display: flex;
-        flex-direction: column;
-        grid-column-start: 4;
-        grid-row-start: 1;
-        grid-row-end: span 3;
+        grid-column-start: 1;
+        grid-column-end: span 2;
+        grid-row-start: 3;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        width: auto;
+        border-right: 1px solid var(--accentblue);
+        border-bottom: 1px solid var(--accentblue);
     }
 
     /*---------discover page--------*/

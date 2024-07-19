@@ -19,50 +19,23 @@
         <meta property="og:type" content="website">
         <meta property="og:image" content="https://jlkohl.github.io/wdd230/chamber/images/hero-large.webp">
         <meta property="og:url" content="https://jlkohl.github.io/wdd230/scootsite">
-        <title>Scoots Scooter Rental Service</title>
+        <title>Scoots Scooter Service</title>
     </head>
     <body>
-        <div class="header-container">
-            <div class="buttons">
-                <button class="button1"><a href="contact.html">Contact us</a></button>
-                <button class="button2"><a href="rentals.html">Reserve Today!</a></button>
+            <div class="navigation-container">
+                <header class="header">
+                    <div id="logo"><img src="images/scoots-logo.png" alt="Scoots Rentals Logo"></div>
+                    <h1 >Scoots</h1>
+                </header>
+                <button id="menu" title="menu"></button>
+                <nav class="navigation">
+                    <a href="index.html">Home</a>
+                    <a href="rentals.html">Rentals</a>
+                    <a href="reservation.html">Reservation</a>
+                    <a href="#">Contact</a>
+                </nav>
             </div>
-            <div id="special-banner" style="display: none;">The high today is --insert temp here---
-                <button id="close-banner">X</button>
-            </div>
-            <picture>
-                <source media="(min-width: 600px)" srcset="images/large-hero.webp">
-                <img src="images/hero-small.webp" alt="Scooter with blue, orange and red trailing it on beige background. With a beach sceen on the left side" width="1920" height="1080">
-            </picture>
-        </div>
-        <div class="navigation-container">
-            <header class="header">
-                <div id="logo"><img src="images/scoots-logo.png" alt="Scoots Rentals Logo"></div>
-                <h1>Scoots</h1>
-            <button id="menu" title="menu"></button>
-            <nav class="navigation" id="home-nav">
-                <a href="#">Home</a>
-                <a href="rentals.html">Rentals</a>
-                <a href="reservation.html">Reservation</a>
-                <a href="contact.html">Contact</a>
-            </nav>
-            </header>
-        </div>
-        <div class="clearfix"></div>
         <main>
-            <section class="photos">
-                <h2>Discover Beautiful Cozumel</h2>
-                <div class="slideshow">
-                    <img id="slideshowImage" src="https://picsum.photos/600/300?random=beach" alt="slideshow image">
-                    <p id="imageDescription">description</p>
-                </div>
-            </section>
-            <section class="scooters">
-            </section>
-            <section class="weather">
-                <h2>Cozumel Weather</h2>
-                <div class="forecast"></div>
-            </section>
         </main>
         <footer>
             <div class="contact">
@@ -76,6 +49,5 @@
         <script src="scripts/getdates.js"></script>
         <script src="scripts/hammenu.js"></script>
         <script src="scripts/banner.js"></script>
-        <script src="scripts/images.js"></script>
     </body>
 </html>
