@@ -137,12 +137,12 @@ body h1 {
 
 body h2, h3 {
     font-family: 'Sedan SC';
-    font-size: 1.5rem;
     text-align: center;
     padding-top: 15px;
     padding-bottom: 10px;
     color: var(--maincolor);
     border-bottom: 2px solid var(--maincolor);
+    font-size: 35px;
 }
 
 a {
@@ -190,6 +190,22 @@ footer {
     100% {
         transform: translateY(0);
     }
+}
+
+.about {
+    text-align: left;
+    border: 3px solid var(--accentblue);
+    border-radius: 10px;
+    max-height: 85%;
+}
+
+.about h2 {
+    text-decoration: underline;
+    padding: 20px;
+}
+
+.about p {
+    padding: 1rem;
 }
 
 .photos {
@@ -263,10 +279,8 @@ footer {
     border-top: 5px solid var(--accentred);
     border-bottom: 5px solid var(--accentred);
     box-shadow:
-            0 5px 0 0 var(--accentorange),
-            0 -5px 0 0 var(--accentorange),
-            0 10px 0 0 var(--accentblue),
-            0 -10px 0 0 var(--accentblue)
+            0 5px 0 0 var(--accentblue),
+            0 -5px 0 0 var(--accentblue)
 }
 
 .weather, .weather h2{

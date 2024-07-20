@@ -1,0 +1,112 @@
+{
+  "rentals" : [
+    {
+      "scooters" : [
+        {
+          "name": "Honda Metropolitan(49cc)",
+          "maxpersons" : 1,
+          "resevation" : [
+            {
+              "halfday": 20,
+              "fullday": 30
+            }
+          ],
+          "walkins" : [
+            {
+              "halfday" : 25,
+              "fullday" : 35
+            }
+          ]
+        },
+        {
+          "name" : "Honda Dio Sscooter(110cc)",
+          "maxpersons" : 2,
+          "reservation" : [
+            {
+              "halfday" : 30,
+              "fullday" : 40
+            }
+          ],
+          "walkins" : [
+            {
+              "halfday" : 35,
+              "fullday" : 45
+            }
+          ]
+        },
+        {
+          "name" : "Honda PCX150 Scooter(149cc)",
+          "maxpersons" : 2,
+          "reservation" : [
+            {
+              "halfday" : 40,
+              "fullday" : 50
+            }
+          ],
+          "walkins" : [
+            {
+              "halfday" : 45,
+              "fullday" : 55
+            }
+          ]
+        }
+    ]
+    },
+    {
+      "atvs" : [
+        {
+          "name" : "Honda Pioneer ATV",
+          "maxpersons" : 4,
+          "reservation" : [
+            {
+              "halfday" : 50,
+              "fullday" : 70
+            }
+          ],
+          "walkins" : [
+            {
+              "halfday" : 60,
+              "fullday" : 80
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "jeeps" : [
+        {
+          "name" : "Jeep Wrangle - 4 door with a/c",
+          "maxpersons" : 5,
+          "reservation" : [
+            {
+              "halfday" : 70,
+              "fullday" : 100
+            }
+          ],
+          "walkin" : [
+            {
+              "halfday" : 85,
+              "fullday" : 125
+            }
+          ]
+        },
+        {
+          "name" : "Jeep Wrangler - 2 door",
+          "maxpersons" : 4,
+          "reservation" : [
+            {
+              "halfday" : 60,
+              "fullday" : 85
+            }
+          ],
+          "walkins" : [
+            {
+              "halfday" : 70,
+              "fullday" :90
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -77,6 +77,12 @@
         font-size: 25px;
     }
     
+    .about {
+        grid-column-start: 1;
+        grid-column-end: span 2;
+        margin-left: 10px;
+    }
+    
     .social {
         width: auto;
         height: fit-content;
@@ -132,15 +138,6 @@
         grid-column-start: 1;
         grid-column-end: span all;
         background-color: var(--accentbeige);
-        border: none;
-        border-top: 5px solid var(--accentred);
-        border-bottom: 5px solid var(--accentred);
-        box-shadow: 
-                0 5px 0 0 var(--accentorange),
-                0 -5px 0 0 var(--accentorange),
-                0 10px 0 0 var(--accentblue),
-                0 -10px 0 0 var(--accentblue);
-        margin-bottom: 20px;
         
     }
     
