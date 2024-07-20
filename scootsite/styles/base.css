@@ -194,7 +194,6 @@ footer {
 
 .about {
     text-align: left;
-    border: 3px solid var(--accentred);
     border-radius: 10px;
     max-height: 85%;
 }
@@ -222,6 +221,10 @@ footer {
 .social {
     border: 2px solid var(--accentorange);
     width: 100vw;
+}
+
+.social h3 {
+    font-size: larger;
 }
 
 .social img {
