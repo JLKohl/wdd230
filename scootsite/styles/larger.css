@@ -7,6 +7,20 @@
     .hero {
         position: relative;
     }
+
+    .header {
+        margin: auto;
+    }
+    
+    .image-two img{
+        height: 270px;
+    }
+    
+    
+    #logo {
+        width: 15%;
+        padding: 0;
+    }
     
     body {
         min-width: 100vw;
@@ -18,7 +32,7 @@
         align-items: center;
         justify-content: space-evenly;
         position: absolute;
-        background-color: rgba(255,255,255,0.65);
+        background-color: rgba(255,255,255,0.90);
         width: 60%;
         margin-left: 20%;
         top: 4vw;
@@ -27,8 +41,13 @@
         border: 2px solid var(--accentblue);
     }
     
+    .navigation{
+        background-color: transparent;
+    }
+    
     .header {
         display: flex;
+        flex-wrap: nowrap;
         align-items: center;
         justify-content: space-around;
         
@@ -69,6 +88,7 @@
     
     .navigation{
         font-size: larger;
+        border-bottom: none;
     }
     
     .action {
