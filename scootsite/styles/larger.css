@@ -230,8 +230,8 @@
         padding: 20px;
     }
     
-    .contact-form fieldset{
-        margin-left: 18%;
+    .contact-form {
+        text-align: center;
     }
     
     .contact-info {

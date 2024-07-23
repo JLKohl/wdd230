@@ -28,6 +28,10 @@ footer {
     padding: 5px;
 }
 
+.small-hero {
+    height: 200px;
+}
+
 .navigation {
     display: flex;
     justify-content: center;
