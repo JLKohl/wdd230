@@ -54,14 +54,13 @@
         <p>Address: 77675 San Miguel de Cozumel, Quintana Roo, Mexico</p>
     </section>
     <section class="contact-us">
-        <h2>Contact us</h2>
-        <p>Have Questions? Let us help!</p>
-        <P>Fill out this form and we will be in touch</p>
         <form method="get" class="contact-form">
             <fieldset>
-                <label>Name: <input type="text" name="name" placeholder="Name"></label>
-                <label>Email: <input type="email" name="email" placeholder="youremail@gmail.com"></label>
-                <label>Comment: <textarea name="message" placeholder="Message"></textarea></label>
+                <legend>Contact Us</legend>
+                <p>* indicates required field</p>
+                <label>*Name: <input type="text" name="name" placeholder="Name" required></label>
+                <label>*Email: <input type="email" name="email" placeholder="youremail@gmail.com" required></label>
+                <label>*Comment: <textarea name="message" placeholder="Message" required></textarea></label>
             </fieldset>
             <input type="button" value="Contact us">
         </form>

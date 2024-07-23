@@ -41,9 +41,53 @@
         </header>
     </div>
 </div>
-<main>
-    <section>
-        <p>this is content</p>
+<main class="reservations">
+    <section class="rental-agreement">
+        <h2>Rental Agreement and Services</h2>
+        <ul>
+            <li>A $50 security deposit is required to confirm reservations.</li>
+            <li>A valid drivers license is required in hand at the time of rental.</li>
+            <li>No one under the age of 12 years of age are allowed to ride on the scooters.</li>
+            <li>Fuel charge is not included.</li>
+            <li>Unlimited mileage.</li>
+            <li>Liability insurance is included.</li>
+            <li>Damage insurance is available for purchase.</li>
+            <li>Free delivery to Cozumel hotels or Airbnbs for 2+ day rentals.</li>
+            <li>Payment via Google Pay, Apple Pay, cash, credit card, debit card, or venmo.</li>
+            <li>Rentals may be returned to either physical location.</li>
+        </ul>
+    </section>
+    <div class="rental-button">
+        <h2>Not sure which rental to get?</h2>
+        <button><a href="rentals.html">Visit Our Rental Page</a></button>
+    </div>
+    <section class="rental-form">
+        <form>
+            <fieldset>
+                <legend>Reserve Your Rental</legend>
+                <p>*indicates required filed</p>
+                <label>*First Name<input type="text" id="fname" name="fname" required></label>
+                <label>*Last Name<input type="text" id="lname" name="lname" required></label>
+                <label>*Select Rental Type:
+                    <select id="rental-select">
+                        <option value="Honda Metro Scooter">Honda Metro Scooter</option>
+                        <option value="Honda Dio Scooter">Honda Dio Scooter</option>
+                        <option value="Honda PCX150 Scooter">Honda PCX150 Scooter</option>
+                        <option value="Honda Pioneer ATV">Honda Pioneer ATV</option>
+                        <option value="Jeep Wrangler - 4 door with a/c">Jeep Wrangler - 4 door with a/c</option>
+                        <option value="Jeep Wrangler - 2 door">Jeep Wrangler - 2 door</option>
+                    </select>
+                </label>
+                <label>*Start Date <input type="date" id="startDate" name="startDate" required></label>
+                <label>*End Date<input type="date" id="endDate" name="endDate" required></label>
+                <label>*E-mail<input type="email" id="email" name="email" title="myemail@gmail.com" required></label>
+                <label>*Phone<input type="tel" id="phone" name="phone" required></label>
+                <label>*Home Country <input type="text" id="country" name="country" required></label>
+                <label>Cruise Line <input type="text" id="cruiseLine" name="cruiseLine"></label>
+                <label>Special accommodations or comments <br> (such as the need and location of a drop-off request). <textarea id="accommodations" name="accommodations"></textarea></label>
+            </fieldset>
+            <input type="button" value="Reserve Your Rental">
+        </form>
     </section>
 </main>
 <footer>

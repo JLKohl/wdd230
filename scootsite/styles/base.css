@@ -343,6 +343,73 @@ footer{
     padding: 15px;
 }
 
+
+/*---------------reservaions------------------*/
+
+
+.rental-form legend,
+.contact-form legend {
+    font-family: "Sedan SC";
+    font-size: 30px;
+    text-align: center;
+}
+
+.rental-form p,
+.contact-form p {
+    font-size: 20px;
+    text-align: center;
+    padding: 10px;
+}
+
+.reservations{
+    background-color: var(--accentbeige);
+    padding: 10px;
+}
+
+.rental-agreement ul {
+    list-style-type: none;
+}
+
+.rental-agreement ul li {
+    padding: 5px;
+}
+
+.rental-agreement ul li::before {
+    content: '🛵. '
+}
+
+.rental-button {
+    border: 3px solid var(--accentblue); ;
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px;
+}
+
+.rental-button h2 {
+    font-size: 30px;
+    padding-bottom: 20px;
+    padding-top: 0;
+}
+
+.rental-button button {
+    font-size: 20px;
+    background-color: var(--accentorange);
+    border-radius: 10px;
+    padding: 16px;
+    border: 1px solid var(--accentblue);
+}
+
+.rental-form input[type="button"]{
+    background-color: var(--accentblue);
+    color: white;
+    border-radius: 5px;
+    padding: 16px;
+    align-items: center;
+    margin-top: 10px;
+    margin-left: 20%;
+    
+}
+
 /*-------------contact page-----------*/
 
 .contact {
@@ -353,7 +420,7 @@ footer{
     background-color: var(--accentbeige);
 }
 
-.contact h2 {
+.contact h2, .rentals h2 {
     font-size: 30px;
 }
 
@@ -369,13 +436,13 @@ footer{
     padding-top: 15px;
 }
 
-.contact-info {
+.contact-info, .rental-form fieldset {
     border: 3px solid var(--accentred);
     padding: 10px;
     border-radius: 10px;
 }
 
-.contact-us {
+.contact-us, .rental-agreement {
     border: 3px solid var(--accentorange);
     padding: 10px;
     border-radius: 10px;
@@ -386,7 +453,7 @@ footer{
     border-radius: 10px;
 }
 
-.contact-form fieldset{
+.contact-form fieldset {
     display: flex;
     flex-direction: column;
     text-align: left;
@@ -396,7 +463,14 @@ footer{
 
 .contact-form input[type="text"],
 .contact-form input[type="email"],
-.contact-form textarea 
+.contact-form textarea,
+.rental-form input[type="text"],
+.rental-form input[type="email"],
+.rental-form input[type="tel"],
+.rental-form input[type="date"],
+.rental-form textarea,
+.rental-form select
+
 {
     background-color: #f5f5f5;
     display: block;
@@ -407,7 +481,8 @@ footer{
     max-width: 400px;
 }
 
-.contact-form input[type="button"]{
+.contact-form input[type="button"]
+{
     background-color: var(--accentblue);
     color: white;
     border-radius: 5px;
@@ -415,7 +490,7 @@ footer{
     width: 45%;
 }
 
-.contact-form label {
+.contact-form label{
     padding: 10px;
 }
 
