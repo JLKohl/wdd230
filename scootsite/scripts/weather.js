@@ -24,7 +24,7 @@ function displayToday(data){
         <h3>Today's Weather</h3>
         <p>${data.main.temp.toFixed(0)}℉</p><br>
         <p>Humidiy: ${data.main.temp}%</p> <br>
-        <img src="http://openweathermap.org/img/w/${data.weather[0].icon}.png" />
+        <img src="http://openweathermap.org/img/w/${data.weather[0].icon}.png" alt="weather icon"/>
     </div>`;
 }
 
