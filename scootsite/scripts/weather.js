@@ -40,7 +40,7 @@ function displayTomorrow(data) {
            <h3>Tomorrow's Weather <br> at 3</h3>
            <p>${tomorrowForecast.main.temp.toFixed(0)}℉</p><br>
            <p>Humidity: ${tomorrowForecast.main.humidity}%</p> <br>
-           <img src="http://openweathermap.org/img/w/${tomorrowForecast.weather[0].icon}.png" />
+           <img src="http://openweathermap.org/img/w/${tomorrowForecast.weather[0].icon}.png" alt="weather icon"/>
     </div>`;
    }
    
