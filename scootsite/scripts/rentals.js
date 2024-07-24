@@ -28,12 +28,9 @@ function displayRentals(rentals) {
             
             let img = document.createElement("img");
            
-           if (rental.image){
-               img.src = rental.image;
-               img.alt = rental.name; 
-           } else {
-               console.log('image not found for rental', rental.name);
-           }
+        
+           img.src = rental.image;
+           img.alt = rental.name;
             productCell.textContent = rental.name;
             productCell.appendChild(img);
             row.appendChild(productCell);
@@ -42,11 +39,21 @@ function displayRentals(rentals) {
             priceCell.textContent = rental.maxpersons;
             row.appendChild(priceCell);
             
-            let reservationHalfCell = document.createElement('td');
-            reservationHalfCell.textContent = rental.res.half;
-            row.appendChild(reservationHalfCell);
+            let resHalfCell = document.createElement('td');
+            resHalfCell.textContent = '$' + rental.res[0].half.toFixed(2);
+            row.appendChild(resHalfCell);
             
+            let resFullCell = document.createElement('td');
+            resFullCell.textContent = '$' + rental.res[0].full.toFixed(2);
+            row.appendChild(resFullCell);
             
+            let walkHalfCell = document.createElement('td');
+            walkHalfCell.textContent = '$' + rental.walk[0].half.toFixed(2);
+            row.appendChild(walkHalfCell);
+            
+            let walkFullCell = document.createElement('td');
+            walkFullCell.textContent = '$' + rental.walk[0].full.toFixed(2);
+            row.appendChild(walkFullCell);
             
             
             
