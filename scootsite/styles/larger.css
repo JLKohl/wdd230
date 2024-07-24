@@ -110,6 +110,7 @@
         padding: 10px;
         grid-column-start: 3;
         grid-column-end: span 2;
+        grid-row-start: 4;
         border: 5px solid var(--accentorange);
         border-radius: 10px;
         text-align: center;
@@ -155,11 +156,32 @@
         grid-column-end: span 2;
     }
 
-    .rentals {
+    .rental-container{
         grid-column-start: 1;
         grid-column-end: span all;
         background-color: var(--accentbeige);
+    }
+    
+    .rentals {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: center;
+        padding-top: 40px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    
+     .rental-card {
+         margin: 5px;
+         background-color: white;
+         border: 1px solid var(--accentblue);
 
+    }
+    
+    .rentals img {
+        width: 250px;
+        height: auto;
     }
 
     .location {
@@ -316,6 +338,32 @@
         
         margin-left: 35%;
         
+    }
+    
+    /*------------rentals--------------*/
+    
+    .table-container {
+        grid-column-start: 1;
+        grid-column-end: span all;
+        grid-row-start: 1;
+        grid-row-end: span all;
+        margin: auto;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    
+    .rental-table{
+        border-left: 3px solid var(--accentblue);
+        border-right: 3px solid var(--accentblue);
+    }
+    
+    .rental-table td:nth-child(1) {
+        width: 10%;
+    }
+    
+    .rental-table img {
+        height: 175px;
+        width: auto;
     }
     
 }

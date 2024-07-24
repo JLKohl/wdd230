@@ -27,10 +27,9 @@ function displayRentals(rentals) {
             let productCell = document.createElement('td');
             
             let img = document.createElement("img");
-           
-        
-           img.src = rental.image;
-           img.alt = rental.name;
+            img.src = rental.image;
+            img.alt = rental.name;
+            img.loading = "lazy"
             productCell.textContent = rental.name;
             productCell.appendChild(img);
             row.appendChild(productCell);

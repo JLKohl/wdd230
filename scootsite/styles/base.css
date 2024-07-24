@@ -294,7 +294,7 @@ footer {
     padding: 10px;
 }
 
-.rentals {
+.rental-container {
     background-color: var(--accentbeige);
     border: none;
     border-top: 5px solid var(--accentred);
@@ -305,6 +305,16 @@ footer {
             0 10px 0 0 var(--accentblue),
             0 -10px 0 0 var(--accentblue)
 
+}
+
+.rentals img {
+    padding: 10px;
+}
+
+.rentals p {
+    text-align: center;
+    padding: 5px;
+    font-size: large;
 }
 
 .weather, .weather h2{
@@ -505,6 +515,68 @@ footer{
 }
 
 
+/*--------------rentals--------------*/
+
+.table-container {
+    width: 100%;
+    overflow-x: auto; 
+}
+
+.rental-table {
+    background-color: var(--accentbeige);
+    width: 100%;
+    margin: 10% auto 10px;
+    border-top: 3px solid var(--accentred);
+    border-bottom: 3px solid var(--accentred);
+    box-shadow: 0 5px 0 0 var(--accentorange),
+    0 -5px 0 0 var(--accentorange),
+    0 10px 0 0 var(--accentblue),
+    0 -10px 0 0 var(--accentblue);
+    border-collapse: collapse;
+}
+
+caption {
+    caption-side: bottom;
+    padding: 20px;
+}
+
+.rental-table img {
+    height: 100px;
+    width: auto;
+    padding: 10px;
+}
+
+td, th {
+    text-align: center;
+    vertical-align: middle;
+}
+
+td {
+    padding: 10px;
+    border: thin solid var(--accentblue);
+    min-width: 150px;
+    white-space: wrap;
+    height: auto;
+}
+
+thead tr:nth-child(1) {
+    color: white;
+    background-color: var(--accentblue);
+    font-family: "Sedan SC";
+    font-size: 35px;
+    padding: 10px;
+}
+
+thead tr:nth-child(2) {
+    font-family: "Sedan SC";
+    font-size: 25px;
+    
+}
+
+tbody tr:nth-child(1) {
+    background-color: var(--accentorange);
+    color: white;
+}
 /*-------------media------------*/
 
 @media (max-width: 600px){
