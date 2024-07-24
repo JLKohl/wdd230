@@ -4,7 +4,7 @@
       "name": "Honda Metropolitan(49cc)",
       "type" : "scooter",
       "maxpersons" : 1,
-      "imageUrl": "../images/honda-metropolitan.webp",
+      "imageUrl": "https://github.com/JLKohl/wdd230/blob/0b525cce7015cc30faddc20dce27e043e773974c/scootsite/images/honda-metropolitan.webp",
       "resevation" : [
         {
           "halfday": 20,
