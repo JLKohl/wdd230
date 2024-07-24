@@ -251,6 +251,11 @@
     .weather-info {
         margin-left: 20%;
     }
+    
+    .weather-info img {
+        height: 80px;
+        width: auto;
+    }
 
     /*--------------contact page ---------------*/
     .contact {
