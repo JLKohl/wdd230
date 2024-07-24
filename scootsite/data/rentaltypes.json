@@ -4,107 +4,107 @@
       "name": "Honda Metropolitan(49cc)",
       "type" : "scooter",
       "maxpersons" : 1,
-      "imageUrl": "https://github.com/JLKohl/wdd230/blob/0b525cce7015cc30faddc20dce27e043e773974c/scootsite/images/honda-metropolitan.webp",
-      "resevation" : [
+      "image": "../images/honda-metropolitan.webp",
+      "res": [
         {
-          "halfday": 20,
-          "fullday": 30
+          "half": 20,
+          "full": 30
         }
       ],
-      "walkins" : [
+      "walk": [
         {
-          "halfday" : 25,
-          "fullday" : 35
+          "half": 25,
+          "full": 35
         }
       ]
     },
     {
-      "name" : "Honda Dio Sscooter(110cc)",
+      "name" : "Honda Dio Scooter(110cc)",
       "type" : "scooter",
-      "imageUrl": "../images/honda-dio.webp",
+      "image": "../images/honda-dio.webp",
       "maxpersons" : 2,
-      "reservation" : [
+      "res": [
         {
-          "halfday" : 30,
-          "fullday" : 40
+          "half": 30,
+          "full": 40
         }
       ],
-      "walkins" : [
+      "walk": [
         {
-          "halfday" : 35,
-          "fullday" : 45
+          "half": 35,
+          "full": 45
         }
       ]
     },
     {
       "name" : "Honda PCX150 Scooter(149cc)",
-      "imageUrl": "../images/honda-pcx150.webp",
+      "image": "../images/honda-pcx150.webp",
       "type" : "scooter",
       "maxpersons" : 2,
-      "reservation" : [
+      "res": [
         {
-          "halfday" : 40,
-          "fullday" : 50
+          "half": 40,
+          "full": 50
         }
       ],
-      "walkins" : [
+      "walk": [
         {
-          "halfday" : 45,
-          "fullday" : 55
+          "half": 45,
+          "full": 55
         }
       ]
     },
     {
       "name" : "Honda Pioneer ATV",
-      "imageUrl": "../images/honda-pioneer.webp",
+      "image": "../images/honda-pioneer.webp",
       "type" : "ATV",
       "maxpersons" : 4,
-      "reservation" : [
+      "res": [
         {
-          "halfday" : 50,
-          "fullday" : 70
+          "half": 50,
+          "full": 70
         }
       ],
-      "walkins" : [
+      "walk": [
         {
-          "halfday" : 60,
-          "fullday" : 80
+          "half": 60,
+          "full": 80
         }
       ]
     },
     {
       "name" : "Jeep Wrangle - 4 door with a/c",
-      "imageUrl": "../images/jeep-4door.webp",
+      "image": "../images/jeep-4door.webp",
       "type" : "Jeep",
       "maxpersons" : 5,
-      "reservation" : [
+      "res": [
         {
-          "halfday" : 70,
-          "fullday" : 100
+          "half": 70,
+          "full": 100
         }
       ],
-      "walkin" : [
+      "walk": [
         {
-          "halfday" : 85,
-          "fullday" : 125
+          "half": 85,
+          "full": 125
         }
       ]
     },
     {
       "name" : "Jeep Wrangler - 2 door",
-      "imageUrl": "../images/jeep-2door.webp",
+      "image": "../images/jeep-2door.webp",
       "type" : "Jeep",
       "maxpersons" : 4,
-      "reservation" : [
+      "res": [
         {
-          "halfday" : 60,
-          "fullday" : 85
+          "half": 60,
+          "full": 85
         }
       ],
-      "walkins" : [
+      "walk": [
         {
-          "halfday" : 70,
-          "fullday" :90
+          "half": 70,
+          "full":90
         }
       ]
     }
