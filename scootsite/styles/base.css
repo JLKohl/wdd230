@@ -28,6 +28,18 @@ footer {
     padding: 5px;
 }
 
+.visually-hidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    white-space: nowrap;
+    margin: -1px;
+}
+
 .small-hero {
     height: 200px;
 }
@@ -370,6 +382,17 @@ footer{
     padding: 15px;
 }
 
+footer a, footer p {
+    text-decoration: underline;
+    color: white;
+    font-size: 20px;
+    font-family: "Times New Roman";
+}
+
+footer p {
+    text-decoration: none;
+}
+
 
 /*---------------reservaions------------------*/
 
@@ -424,6 +447,11 @@ footer{
     border-radius: 10px;
     padding: 16px;
     border: 1px solid var(--accentblue);
+}
+
+.rental-button .button1 {
+    font-size: 25px;
+    padding: 10px;
 }
 
 .rental-form input[type="button"]{

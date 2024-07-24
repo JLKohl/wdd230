@@ -59,15 +59,16 @@
     </section>
     <div class="rental-button">
         <h2>Not sure which rental to get?</h2>
-        <button><a href="rentals.html">Visit Our Rental Page</a></button>
+        <a class="button1" href="rentals.html">Visit Our Rental Page</a>
     </div>
     <section class="rental-form">
-        <form method="get" action="thankyou.html">
+        <h2 class="visually-hidden">Reserve Your Rental</h2>
+        <form method="get" >
             <fieldset>
                 <legend>Reserve Your Rental</legend>
                 <p>*indicates required filed</p>
-                <label>*First Name<input type="text" id="fname" name="fname" required></label>
-                <label>*Last Name<input type="text" id="lname" name="lname" required></label>
+                <label>*First Name<input type="text" id="fname" name="fname" placeholder="first name" required></label>
+                <label>*Last Name<input type="text" id="lname" name="lname" placeholder="last name" required></label>
                 <label>*Select Rental Type:
                     <select id="rental-select">
                         <option value="Honda Metro Scooter">Honda Metro Scooter</option>
@@ -80,8 +81,8 @@
                 </label>
                 <label>*Start Date <input type="date" id="startDate" name="startDate" required></label>
                 <label>*End Date<input type="date" id="endDate" name="endDate" required></label>
-                <label>*E-mail<input type="email" id="email" name="email" title="myemail@gmail.com" required></label>
-                <label>*Phone<input type="tel" id="phone" name="phone" required></label>
+                <label>*E-mail<input type="email" id="email" name="email" placeholder="youremail@gmail.com" required></label>
+                <label>*Phone<input type="tel" id="phone" name="phone" placeholder=(000)000-0000 required></label>
                 <label>*Home Country <input type="text" id="country" name="country" required></label>
                 <label>Cruise Line <input type="text" id="cruiseLine" name="cruiseLine"></label>
                 <label>Special accommodations or comments <br> (such as the need and location of a drop-off request). <textarea id="accommodations" name="accommodations"></textarea></label>
@@ -91,13 +92,8 @@
     </section>
 </main>
 <footer>
-    <div class="contact-footer">
-        <p>Address: 1234 W Galax Dr</p>
-        <p>Phone: (276)237-1234</p>
-        <p>E-mail: galaxcitycommerce@galax.com</p>
-    </div>
     <p>Jennifer Kohl | Project for WDD 230 - BYUi | &copy; <span id="year"></span></p>
-    <p id="lastModified"></p>
+    <a href="https://www.istockphoto.com/">Image Source</a>
 </footer>
 <script src="scripts/getdates.js"></script>
 <script src="scripts/hammenu.js"></script>
