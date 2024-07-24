@@ -616,7 +616,7 @@ thead tr:nth-child(2) {
 
 tbody tr:nth-child(1) {
     background-color: var(--accentorange);
-    color: black;
+    color: var(--accentblue);
 }
 /*-------------media------------*/
 
